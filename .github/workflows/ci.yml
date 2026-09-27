@@ -1,4 +1,4 @@
-name: CI — test and build
+name: CI/CD — test, build, deploy dashboard + image
 
 on:
   push:
@@ -6,6 +6,13 @@ on:
     paths: ["naukri-bot/**", ".github/workflows/**"]
   pull_request:
     paths: ["naukri-bot/**"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   test:
@@ -23,7 +30,7 @@ jobs:
           python-version: "3.11"
       - run: pip install -r requirements.txt
       - name: Compile everything
-        run: python -m py_compile $(find src -name "*.py")
+        run: python -m py_compile $(find src -name "*.py") scripts/ci_check.py
       - name: Brain smoke tests (no network, no browser)
         run: python scripts/ci_check.py
 
@@ -35,3 +42,44 @@ jobs:
       - name: Build bot image (validates Dockerfile, nothing is pushed)
         working-directory: naukri-bot
         run: docker build -t naukri-bot:ci .
+
+  image:
+    needs: [test, build]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v5
+      - name: Build and push image to GHCR (free, no extra secrets)
+        working-directory: naukri-bot
+        run: |
+          TAG=${GITHUB_SHA::12}
+          OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          IMG="ghcr.io/$OWNER/naukri-bot"
+          echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
+          docker build -t "$IMG:$TAG" -t "$IMG:latest" .
+          docker push "$IMG:$TAG"
+          docker push "$IMG:latest"
+
+  pages:
+    needs: [test, build]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+      - name: Upload dashboard site (shell + latest committed data.json)
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: naukri-bot/dashboard
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -5,6 +5,5 @@ data/bot-profile/
 data/*.db
 data/*.log
 data/*.csv
-dashboard/data.json
 playwright/
 .venv/

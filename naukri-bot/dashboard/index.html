@@ -35,7 +35,8 @@
   .pager { display:flex; gap:10px; align-items:center; margin-top:10px; font-size:13px; color:var(--mut); }
   .pager button { background:var(--card); color:var(--txt); border:1px solid #2b3648; border-radius:8px; padding:6px 14px; cursor:pointer; }
   .pager button:disabled { opacity:.4; cursor:default; }
-</style>
+  .livelog { background:#0a0e13; border:1px solid #263043; border-radius:12px; padding:12px 14px; font-size:12px; line-height:1.6; max-height:220px; overflow-y:auto; white-space:pre-wrap; margin-top:14px; }
+  .livelog:empty { display:none; }</style>
 </head>
 <body>
 <div class="top">
@@ -48,6 +49,7 @@
   </div>
 </div>
 <div class="sub">Imran Sutar &middot; Full Stack Developer &middot; Pan-India &middot; past 24h &middot; updated <span id="upd">…</span></div>
+<div class="livelog" id="livelog"></div>
 <div class="cards">
   <div class="card"><div class="n green" id="sApplied">–</div><div class="l">Applied (all time)</div></div>
   <div class="card"><div class="n yellow" id="sSkipped">–</div><div class="l">Skipped (all time)</div></div>
@@ -174,7 +176,12 @@ async function refreshStatus() {
     const s = await r.json();
     SERVER_OK = true;
     document.getElementById('dot').className = 'dot' + (s.running ? ' on' : '');
-    document.getElementById('botStatus').textContent = s.running ? `running (pid ${s.pid})` : 'stopped';
+    document.getElementById('botStatus').textContent = s.running
+      ? `running (pid ${s.pid}${s.uptime_secs ? ' · up ' + Math.floor(s.uptime_secs / 60) + 'm' : ''})`
+      : 'stopped';
+    const tail = (s.log_tail || []).slice(-12).join('\n');
+    const box = document.getElementById('livelog');
+    if (tail !== box.textContent) { box.textContent = tail; box.scrollTop = box.scrollHeight; }
     document.getElementById('btnStart').disabled = !!s.running;
     document.getElementById('btnStop').disabled = !s.running;
   } catch (e) {

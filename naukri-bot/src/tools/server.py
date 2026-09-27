@@ -24,6 +24,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data"
 PID_FILE = DATA / "bot.pid"
+STARTED_FILE = DATA / "bot.started"
 BOT_LOG = DATA / "bot-server.log"
 PORT = int(os.getenv("DASHBOARD_PORT", "8765"))
 
@@ -46,14 +47,35 @@ def status() -> dict:
     try:
         pid = int(PID_FILE.read_text(encoding="utf-8").strip())
     except Exception:
-        return {"running": False, "pid": None}
+        return {"running": False, "pid": None, "uptime_secs": 0, "log_tail": []}
     if _alive(pid):
-        return {"running": True, "pid": pid}
+        return {"running": True, "pid": pid,
+                "uptime_secs": _uptime(), "log_tail": _log_tail()}
     try:
         PID_FILE.unlink()
     except Exception:
         pass
-    return {"running": False, "pid": None}
+    return {"running": False, "pid": None, "uptime_secs": 0, "log_tail": _log_tail()}
+
+
+def _uptime() -> int:
+    try:
+        import time as _t
+        return max(0, int(_t.time() - float(STARTED_FILE.read_text(encoding="utf-8").strip())))
+    except Exception:
+        return 0
+
+
+def _log_tail(n: int = 12) -> list[str]:
+    try:
+        with open(BOT_LOG, "rb") as f:
+            f.seek(0, 2)
+            size = f.tell()
+            f.seek(max(0, size - 8192))
+            lines = f.read().decode("utf-8", "replace").splitlines()
+        return lines[-n:]
+    except Exception:
+        return []
 
 
 def start_bot() -> dict:
@@ -70,6 +92,8 @@ def start_bot() -> dict:
         kwargs["start_new_session"] = True
     p = subprocess.Popen([sys.executable, "-m", "src.orchestrator.run"], **kwargs)
     PID_FILE.write_text(str(p.pid), encoding="utf-8")
+    import time as _t
+    STARTED_FILE.write_text(str(_t.time()), encoding="utf-8")
     return {"ok": True, "running": True, "pid": p.pid}
 
 

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naukri Auto-Apply Dashboard</title>
+<style>
+  :root { --bg:#0f1419; --card:#1a2230; --acc:#22c55e; --warn:#f59e0b; --txt:#e5e7eb; --mut:#9ca3af; --blue:#60a5fa; }
+  * { box-sizing:border-box; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+  body { background:var(--bg); color:var(--txt); margin:0; padding:24px; }
+  .top { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+  h1 { font-size:22px; margin:0; }
+  .sub { color:var(--mut); font-size:13px; margin:4px 0 20px; }
+  .controls { display:flex; align-items:center; gap:10px; }
+  .dot { width:10px; height:10px; border-radius:50%; background:#6b7280; display:inline-block; }
+  .dot.on { background:var(--acc); box-shadow:0 0 8px var(--acc); }
+  .btn { border:0; border-radius:8px; padding:9px 18px; font-size:14px; font-weight:600; cursor:pointer; color:#fff; }
+  .btn.start { background:var(--acc); } .btn.stop { background:#ef4444; }
+  .btn:disabled { opacity:.45; cursor:default; }
+  .status { font-size:13px; color:var(--mut); }
+  .cards { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:8px; }
+  .card { background:var(--card); border-radius:12px; padding:16px 22px; min-width:150px; }
+  .card .n { font-size:28px; font-weight:700; }
+  .card .l { color:var(--mut); font-size:12px; text-transform:uppercase; }
+  .green { color:var(--acc); } .yellow { color:var(--warn); }
+  h2 { font-size:16px; margin:24px 0 10px; }
+  .toolbar { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:10px; font-size:13px; }
+  select, input[type=date] { background:var(--card); color:var(--txt); border:1px solid #2b3648; border-radius:8px; padding:7px 10px; font-size:13px; }
+  .count { color:var(--mut); margin-left:auto; }
+  table { width:100%; border-collapse:collapse; background:var(--card); border-radius:12px; overflow:hidden; font-size:13px; }
+  th,td { text-align:left; padding:10px 12px; border-bottom:1px solid #263043; }
+  th { color:var(--mut); font-size:11px; text-transform:uppercase; }
+  a { color:var(--blue); text-decoration:none; } a:hover { text-decoration:underline; }
+  .pill { display:inline-block; padding:2px 10px; border-radius:20px; font-size:11px; background:#223; }
+  .pager { display:flex; gap:10px; align-items:center; margin-top:10px; font-size:13px; color:var(--mut); }
+  .pager button { background:var(--card); color:var(--txt); border:1px solid #2b3648; border-radius:8px; padding:6px 14px; cursor:pointer; }
+  .pager button:disabled { opacity:.4; cursor:default; }
+</style>
+</head>
+<body>
+<div class="top">
+  <h1>Naukri Auto-Apply Bot</h1>
+  <div class="controls" id="controls">
+    <span class="dot" id="dot"></span>
+    <span class="status" id="botStatus">connecting…</span>
+    <button class="btn start" id="btnStart">Start Naukri Bot</button>
+    <button class="btn stop" id="btnStop">Stop Naukri Bot</button>
+  </div>
+</div>
+<div class="sub">Imran Sutar &middot; Full Stack Developer &middot; Pan-India &middot; past 24h &middot; updated <span id="upd">…</span></div>
+<div class="cards">
+  <div class="card"><div class="n green" id="sApplied">–</div><div class="l">Applied (all time)</div></div>
+  <div class="card"><div class="n yellow" id="sSkipped">–</div><div class="l">Skipped (all time)</div></div>
+  <div class="card"><div class="n" id="sToday">–</div><div class="l">Applied today</div></div>
+</div>
+
+<h2>Applied jobs</h2>
+<div class="toolbar">
+  <label>Date <select id="fAppliedPreset">
+    <option value="today" selected>Today</option>
+    <option value="week">This week</option>
+    <option value="lastweek">Last week</option>
+    <option value="last7">Last 7 days</option>
+    <option value="month">This month</option>
+    <option value="custom">Custom…</option>
+  </select></label>
+  <span id="cAppliedCustom" style="display:none">from <input type="date" id="fAppliedFrom"> to <input type="date" id="fAppliedTo"></span>
+  <label>Rows <select id="pAppliedPer">
+    <option>10</option><option selected>20</option><option>50</option><option>100</option>
+  </select></label>
+  <span class="count" id="cAppliedCount"></span>
+</div>
+<table><thead><tr><th>Title</th><th>Company</th><th>Applicants</th><th>Posted</th><th>Applied at</th><th>Link</th></tr></thead>
+<tbody id="tApplied"><tr><td colspan="6">loading…</td></tr></tbody></table>
+<div class="pager"><button id="pAppliedPrev">← Prev</button><span id="pAppliedInfo"></span><button id="pAppliedNext">Next →</button></div>
+
+<h2>Skipped jobs</h2>
+<div class="toolbar">
+  <label>Date <select id="fSkippedPreset">
+    <option value="today" selected>Today</option>
+    <option value="week">This week</option>
+    <option value="lastweek">Last week</option>
+    <option value="last7">Last 7 days</option>
+    <option value="month">This month</option>
+    <option value="custom">Custom…</option>
+  </select></label>
+  <span id="cSkippedCustom" style="display:none">from <input type="date" id="fSkippedFrom"> to <input type="date" id="fSkippedTo"></span>
+  <label>Rows <select id="pSkippedPer">
+    <option>10</option><option selected>20</option><option>50</option><option>100</option>
+  </select></label>
+  <span class="count" id="cSkippedCount"></span>
+</div>
+<table><thead><tr><th>Title</th><th>Company</th><th>Reason</th><th>Link</th></tr></thead>
+<tbody id="tSkipped"><tr><td colspan="4">loading…</td></tr></tbody></table>
+<div class="pager"><button id="pSkippedPrev">← Prev</button><span id="pSkippedInfo"></span><button id="pSkippedNext">Next →</button></div>
+
+<script>
+let DATA = { applied: [], skipped: [], stats: {} };
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt = d => d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+const parseD = s => { const m = /^(\d{4}-\d{2}-\d{2})/.exec(s || ''); return m ? m[1] : ''; };
+const addDays = (d, n) => { const x = new Date(d); x.setDate(x.getDate() + n); return x; };
+
+function rangeFor(preset, from, to) {
+  const today = new Date();
+  const T = fmt(today);
+  const monday = addDays(today, -((today.getDay() + 6) % 7));
+  switch (preset) {
+    case 'today': return [T, T];
+    case 'week': return [fmt(monday), T];
+    case 'lastweek': { const m = addDays(monday, -7); return [fmt(m), fmt(addDays(m, 6))]; }
+    case 'last7': return [fmt(addDays(today, -6)), T];
+    case 'month': return [T.slice(0, 7) + '-01', T];
+    case 'custom': return [from || '0000-00-00', to || '9999-99-99'];
+    default: return ['0000-00-00', '9999-99-99'];
+  }
+}
+
+function makeTable(cfg) {
+  const S = { preset: 'today', from: '', to: '', per: 20, page: 1 };
+  const $ = id => document.getElementById(id);
+  const apply = () => {
+    S.preset = $('f' + cfg + 'Preset').value;
+    S.from = $('f' + cfg + 'From').value;
+    S.to = $('f' + cfg + 'To').value;
+    S.per = parseInt($('p' + cfg + 'Per').value, 10);
+    $('c' + cfg + 'Custom').style.display = S.preset === 'custom' ? '' : 'none';
+    S.page = 1; render();
+  };
+  ['f' + cfg + 'Preset', 'f' + cfg + 'From', 'f' + cfg + 'To', 'p' + cfg + 'Per']
+    .forEach(id => $(id).addEventListener('change', apply));
+  $('p' + cfg + 'Prev').addEventListener('click', () => { if (S.page > 1) { S.page--; render(); } });
+  $('p' + cfg + 'Next').addEventListener('click', () => { S.page++; render(); });
+  function render() {
+    const [lo, hi] = rangeFor(S.preset, S.from, S.to);
+    const rows = (cfg === 'Applied' ? DATA.applied : DATA.skipped)
+      .filter(r => { const d = r.date || parseD(r.applied_at || r.skipped_at); return d >= lo && d <= hi; });
+    const pages = Math.max(1, Math.ceil(rows.length / S.per));
+    if (S.page > pages) S.page = pages;
+    const slice = rows.slice((S.page - 1) * S.per, S.page * S.per);
+    $('t' + cfg).innerHTML = slice.map(cfg === 'Applied' ? rowA : rowS).join('')
+      || `<tr><td colspan="${cfg === 'Applied' ? 6 : 4}">no jobs in this range</td></tr>`;
+    $('p' + cfg + 'Info').textContent = `Page ${S.page} of ${pages}`;
+    $('p' + cfg + 'Prev').disabled = S.page <= 1;
+    $('p' + cfg + 'Next').disabled = S.page >= pages;
+    $('c' + cfg + 'Count').textContent = `showing ${slice.length} of ${rows.length}`;
+  }
+  return render;
+}
+const rowA = j => `<tr><td>${esc(j.title)}</td><td>${esc(j.company)}</td><td>${esc(j.applicants)}</td><td>${esc(j.posted_ago)}</td><td>${esc(j.applied_at)}</td><td><a href="${esc(j.url)}" target="_blank">open</a></td></tr>`;
+const rowS = j => `<tr><td>${esc(j.title)}</td><td>${esc(j.company)}</td><td><span class="pill">${esc(j.reason)}</span></td><td><a href="${esc(j.url)}" target="_blank">open</a></td></tr>`;
+const renderApplied = makeTable('Applied');
+const renderSkipped = makeTable('Skipped');
+
+async function load() {
+  try {
+    const r = await fetch('data.json?t=' + Date.now());
+    DATA = await r.json();
+    document.getElementById('upd').textContent = esc(DATA.generated_at || '—');
+    document.getElementById('sApplied').textContent = DATA.stats?.applied ?? 0;
+    document.getElementById('sSkipped').textContent = DATA.stats?.skipped ?? 0;
+    document.getElementById('sToday').textContent = DATA.stats?.applied_today ?? 0;
+    renderApplied(); renderSkipped();
+  } catch (e) { console.warn('data.json not available', e); }
+}
+
+// Bot start/stop — needs the control server (run `nk-dash`, then open
+// http://127.0.0.1:8765). If unreachable, buttons explain what to do.
+let SERVER_OK = false;
+async function refreshStatus() {
+  try {
+    const r = await fetch('api/status?t=' + Date.now());
+    if (!r.ok) throw 0;
+    const s = await r.json();
+    SERVER_OK = true;
+    document.getElementById('dot').className = 'dot' + (s.running ? ' on' : '');
+    document.getElementById('botStatus').textContent = s.running ? `running (pid ${s.pid})` : 'stopped';
+    document.getElementById('btnStart').disabled = !!s.running;
+    document.getElementById('btnStop').disabled = !s.running;
+  } catch (e) {
+    SERVER_OK = false;
+    document.getElementById('dot').className = 'dot';
+    document.getElementById('botStatus').textContent = 'server offline — run nk-dash first';
+    document.getElementById('btnStart').disabled = false;
+    document.getElementById('btnStop').disabled = true;
+  }
+}
+async function control(path) {
+  if (!SERVER_OK) {
+    alert('Dashboard server is not running.\n\n1. Open a terminal\n2. Type: nk-dash\n3. Open http://127.0.0.1:8765');
+    return;
+  }
+  const btn = path.includes('start') ? 'btnStart' : 'btnStop';
+  document.getElementById(btn).disabled = true;
+  try { await fetch('api/' + path, { method: 'POST' }); } catch (e) {}
+  setTimeout(refreshStatus, 1500);
+}
+document.getElementById('btnStart').addEventListener('click', () => control('start'));
+document.getElementById('btnStop').addEventListener('click', () => control('stop'));
+load();
+refreshStatus();
+setInterval(load, 5 * 60 * 1000);
+setInterval(refreshStatus, 5000);
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+name: CI — test and build
+
+on:
+  push:
+    branches: [main]
+    paths: ["naukri-bot/**", ".github/workflows/**"]
+  pull_request:
+    paths: ["naukri-bot/**"]
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: naukri-bot
+    steps:
+      - uses: actions/checkout@v5
+      - name: Verify project directory exists
+        working-directory: ${{ github.workspace }}
+        run: test -d naukri-bot || (echo "::error::naukri-bot/ is missing from the repo — commit and push it first (see README)."; exit 1)
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Compile everything
+        run: python -m py_compile $(find src -name "*.py")
+      - name: Brain smoke tests (no network, no browser)
+        run: >-
+          python -c "
+          from src.brain.rules import rule_answer, pick_experience_option;
+          assert rule_answer('Do you have any other offer in hand?', []) == 'No';
+          assert pick_experience_option(['1-2','2-3','3-4','4-5','5+']) == '3-4';
+          from src.tools.blocklist import is_company_blocked;
+          assert is_company_blocked('Infosis Pvt Ltd', ['Infosys'])[0] is True;
+          from src.config.candidate import CANDIDATE;
+          assert CANDIDATE['github'] == 'https://github.com/Imran2909';
+          print('CI CHECKS PASS')"
+
+  build:
+    needs: test
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - name: Build bot image (validates Dockerfile, nothing is pushed)
+        working-directory: naukri-bot
+        run: docker build -t naukri-bot:ci .

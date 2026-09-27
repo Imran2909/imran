@@ -1,0 +1,14 @@
+# Local Docker test run (mirrors EC2). Needs .env + RESUME_PATH pointing
+# at a file mounted into the container (see volumes).
+services:
+  bot:
+    image: ${BOT_IMAGE:-naukri-bot:local}
+    build: .
+    env_file: .env
+    environment:
+      RUN_HEADLESS: "true"
+      RESUME_PATH: /app/data/resume.pdf
+      CHROME_PROFILE_DIR: data/bot-profile
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped

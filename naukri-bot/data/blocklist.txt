@@ -1,0 +1,5 @@
+# Companies to NEVER apply to - one per line. Lines starting with # are ignored.
+# Matching ignores case, Pvt/Ltd-type suffixes, and small spelling mistakes.
+# Examples:
+# Infosys
+# Tata Consultancy

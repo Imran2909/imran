@@ -25,16 +25,7 @@ jobs:
       - name: Compile everything
         run: python -m py_compile $(find src -name "*.py")
       - name: Brain smoke tests (no network, no browser)
-        run: >-
-          python -c "
-          from src.brain.rules import rule_answer, pick_experience_option;
-          assert rule_answer('Do you have any other offer in hand?', []) == 'No';
-          assert pick_experience_option(['1-2','2-3','3-4','4-5','5+']) == '3-4';
-          from src.tools.blocklist import is_company_blocked;
-          assert is_company_blocked('Infosis Pvt Ltd', ['Infosys'])[0] is True;
-          from src.config.candidate import CANDIDATE;
-          assert CANDIDATE['github'] == 'https://github.com/Imran2909';
-          print('CI CHECKS PASS')"
+        run: python scripts/ci_check.py
 
   build:
     needs: test

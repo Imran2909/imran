@@ -1,11 +1,1231 @@
 {
- "generated_at": "2026-09-27 11:04 PM IST",
+ "generated_at": "2026-10-01 10:57 PM IST",
  "stats": {
-  "applied": 40,
-  "skipped": 48,
-  "applied_today": 40
+  "applied": 162,
+  "skipped": 427,
+  "applied_today": 15
  },
  "applied": [
+  {
+   "title": "React JS Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-js-developer-rimpac-hr-services-llp-pune-bengaluru-1-to-6-years-011026929332",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-10-01 10:57 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Front End Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-front-end-developer-cotiviti-pune-3-to-6-years-011026022700",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-10-01 10:56 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Application Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-application-developer-net-connect-hyderabad-bengaluru-1-to-4-years-300926025833",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-10-01 02:01 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Generative Ai 2- 5 yrs",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-generative-ai-2-5-yrs-infosys-hyderabad-chennai-bengaluru-2-to-5-years-300926032467",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-10-01 02:01 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Backend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-backend-developer-devteam-365-development-india-bhubaneswar-2-to-3-years-300926034742",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-10-01 02:00 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Python Backend Developer - CDOT - Delhi",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-python-backend-developer-cdot-delhi-national-institute-for-smart-government-nisg-new-delhi-1-to-3-years-011026011473",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-10-01 02:00 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Frontend UI/UX React Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-ui-ux-react-developer-tectona-ahmedabad-1-to-3-years-011026018071",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-10-01 01:59 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Frontend Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-engineer-numinolabs-south-goa-1-to-6-years-010926029139",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-10-01 01:58 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Web Developer (React.js)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-web-developer-react-js-proprofs-noida-3-to-6-years-230926024270",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-10-01 01:58 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Python Developer (Django + AWS) @ Infosys",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-python-developer-django-aws-infosys-infosys-hyderabad-chennai-bengaluru-2-to-3-years-190926016131",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-10-01 01:57 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Mean Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-mean-stack-developer-nihar-info-global-ltd-hyderabad-2-to-5-years-300926930929",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-10-01 01:56 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Senior Frontend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-frontend-developer-t7e-thane-navi-mumbai-mumbai-all-areas-2-to-4-years-070926013163",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-10-01 01:56 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Fullstack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-fullstack-developer-integrated-active-monitoring-pune-1-to-3-years-300926028147",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-10-01 01:53 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "MERN Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-mern-stack-developer-itianz-madurai-1-to-3-years-300926036636",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-10-01 01:53 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Full-stack Developer Kolkata",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-kolkata-vara-infrovate-kolkata-3-to-5-years-300926036005",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-10-01 01:52 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Java Senior Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-senior-developer-infosys-limited-bengaluru-3-to-5-years-290926934506",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 11:28 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": ".NET cloud Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-net-cloud-developer-infosys-limited-bengaluru-2-to-3-years-290926934488",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 11:28 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Python Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-python-developer-infosys-limited-bengaluru-2-to-3-years-290926934444",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 11:28 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-developer-smart-controls-bengaluru-2-to-4-years-290926023268",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 11:27 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Fullstack React Node - Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-fullstack-react-node-engineer-iris-software-technologies-private-limited-noida-3-to-8-years-290926917078",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-30 11:26 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Front End Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-front-end-developer-lawcubator-bengaluru-3-to-6-years-290926032165",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 11:16 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "SW Engineer II",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-sw-engineer-ii-ncr-atleos-hyderabad-3-to-8-years-290926032942",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 11:11 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "React.Js Web Developer with Python- Guntur, Hyderabad",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-300926004842",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-30 11:09 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Progress 4GL OpenEdge Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-progress-4gl-openedge-developer-luxoft-india-llp-pune-2-to-7-years-290926917390",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 11:09 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Cloud .NET Developer _ Hyderabad @F2F Must(10-Oct) _C2H role",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-cloud-net-developer-hyderabad-f2f-must-10-oct-c2h-role-techouts-hyderabad-3-to-8-years-300926000043",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 11:07 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "React Native Node.js Developer | Digital Marketing | Bengaluru - HSR",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-native-node-js-developer-digital-marketing-bengaluru-hsr-talent-corner-hr-services-hsrlayout-bengaluru-2-to-3-years-250926030977",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-30 11:06 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Node Js Developer-INF (2-3) YRS",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-inf-2-3-yrs-infosys-hyderabad-chennai-bengaluru-2-to-3-years-260826028955",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-30 11:05 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Pega Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-pega-developer-cgi-information-systems-and-management-consultants-hyderabad-1-to-5-years-290926917586",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 11:04 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Full Stack .NET Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-full-stack-net-developer-one-soft-systems-warangal-hyderabad-navi-mumbai-2-to-7-years-290926014115",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-30 11:03 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Software Engineer - AI Applications & Automation",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-software-engineer-ai-applications-automation-humanityai-kochi-aluva-3-to-5-years-290926924291",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 11:03 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Production Support - Senior Test Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-production-support-senior-test-engineer-cgi-information-systems-and-management-consultants-hyderabad-3-to-5-years-290926917360",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 11:03 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Fullstack Engineer (AI)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-fullstack-engineer-ai-prescience-decision-solutions-a-movate-company-bengaluru-3-to-6-years-290926039814",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 11:02 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Fullstack Developer_Senior",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-fullstack-developer-senior-securekloud-technologies-limited-chennai-2-to-4-years-290926016829",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 11:02 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Fullstack React Node - Senior Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-fullstack-react-node-senior-engineer-iris-software-technologies-private-limited-noida-3-to-8-years-290926917699",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-30 11:01 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Staff Software Engineer - User Interface",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-staff-software-engineer-user-interface-ge-renewable-energy-technologies-private-limited-hyderabad-bengaluru-3-to-7-years-290926935480",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 11:00 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Python + GENAI- INF (2-3) YRS",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-python-genai-inf-2-3-yrs-infosys-hyderabad-chennai-bengaluru-2-to-3-years-180826041516",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 11:00 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "React Native Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-native-developer-execution-force-new-delhi-3-to-7-years-290926021248",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-30 10:59 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Backend Developer - PHP & Laravel",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-backend-developer-php-laravel-crayon-infotech-mumbai-suburban-0-to-4-years-290926023520",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-30 10:59 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "java+reactjs (2-15)-INF",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-reactjs-2-15-inf-infosys-hyderabad-chennai-bengaluru-2-to-3-years-270726031005",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-30 10:58 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "React JS Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-js-developer-sntg-it-services-ahmedabad-3-to-8-years-300926001855",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-30 10:58 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Web Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-web-developer-him-technology-private-limited-noida-2-to-4-years-290926501305",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 10:58 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "SDE-2",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-sde-2-talentstack-bengaluru-3-to-8-years-290926040595",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 10:54 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Python Django Developer - INF",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-python-django-developer-inf-infosys-hyderabad-chennai-bengaluru-2-to-5-years-130726032080",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 10:54 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Python Software Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-python-software-developer-tutorcloud-ai-pvt-ltd-bengaluru-1-to-5-years-290926015452",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 10:53 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Python Senior Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-python-senior-developer-infosys-limited-bengaluru-3-to-5-years-290926933938",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 10:53 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-engineer-ge-renewable-energy-technologies-private-limited-bengaluru-3-to-6-years-290926934319",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 10:52 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Development Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-development-engineer-stratos-infra-technologies-bengaluru-3-to-6-years-290926020942",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 10:52 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Development Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-development-engineer-luxoft-india-llp-bengaluru-1-to-6-years-290926917171",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 10:51 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Ent Surgeon",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-ent-surgeon-doctors-door-health-care-staffing-and-consultant-l-lp-tiruvannamalai-1-to-6-years-290926938884",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 10:51 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Development Engineer - Full Stack",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-development-engineer-full-stack-datazymes-analytics-bengaluru-2-to-4-years-110626029092",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-30 10:50 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Staff AI Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-staff-ai-engineer-ge-renewable-energy-technologies-private-limited-bengaluru-3-to-8-years-290926935459",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 10:50 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": ".NET full stack Senior Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-net-full-stack-senior-developer-infosys-limited-bengaluru-3-to-5-years-290926934326",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-30 10:49 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Java or Kotlin & React.js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-or-kotlin-react-js-developer-capgemini-technology-services-india-limited-mumbai-3-to-7-years-290926934504",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-30 10:49 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Fullstack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-fullstack-developer-vara-infrovate-kolkata-gurugram-3-to-5-years-290926040989",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 10:48 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": ".NET Fullstack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-net-fullstack-developer-cgi-information-systems-and-management-consultants-hyderabad-2-to-7-years-290926917690",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 10:48 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Mern Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-mern-full-stack-developer-iatocs-pune-bengaluru-3-to-8-years-300926003217",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-30 10:47 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": ".Net full stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-net-full-stack-developer-infosys-limited-bengaluru-2-to-3-years-290926934238",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-30 10:47 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "REACT JS + NODE JS -INF (2-9) YRS",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-js-node-js-inf-2-9-yrs-infosys-hyderabad-chennai-bengaluru-2-to-7-years-080926006952",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-30 10:46 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "React Developer | 2-4 Years | Immediate Joiner | Bangalore",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-developer-2-4-years-immediate-joiner-bangalore-sketch-brahma-technologies-bengaluru-2-to-4-years-290926035915",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-30 02:03 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Python Django Developer - INF (2 To 9) YRS",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-python-django-developer-inf-2-to-9-yrs-infosys-hyderabad-chennai-bengaluru-2-to-7-years-200826033092",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 02:02 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Fullstack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-fullstack-developer-vsb-studio-new-delhi-1-to-4-years-290926034151",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-30 02:01 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-him-technology-private-limited-noida-3-to-6-years-290926501301",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-30 01:37 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": ".NET Software Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-net-software-developer-integel-institute-of-technology-tamil-nadu-hyderabad-chennai-bengaluru-3-to-8-years-290926010495",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-29 12:39 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Java Back End Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-back-end-developer-platly-infotech-hyderabad-chennai-bengaluru-3-to-8-years-290926016701",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-29 12:37 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": ".NET Application Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-net-application-developer-infosys-hyderabad-chennai-bengaluru-3-to-5-years-100826024351",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-29 12:36 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Backend Python Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-backend-python-developer-infosys-hyderabad-pune-bengaluru-2-to-5-years-180926000044",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 12:35 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Backend Engineers - Microservices, Databases & Zero Trust Security",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-backend-engineers-microservices-databases-zero-trust-security-turingiq-solutions-hyderabad-3-to-8-years-290926014606",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 12:35 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Backend Python Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-backend-python-developer-infosys-hyderabad-pune-bengaluru-2-to-3-years-280926032134",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 12:34 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Mern Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-mern-full-stack-developer-anlage-infotech-bengaluru-3-to-6-years-280926015916",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 10:29 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "React JS + Node JS Developer-S",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-js-node-js-developer-s-infosys-hyderabad-chennai-bengaluru-2-to-5-years-200926014654",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 10:28 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-agicent-technologies-noida-0-to-3-years-280926503266",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 10:27 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "AI Full stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-ai-full-stack-developer-sunrise-biztech-systems-hyderabad-3-to-6-years-240926015194",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 10:00 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Full stack Developer || BFSI",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-bfsi-n53-techworks-llp-pune-3-to-5-years-280926017986",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 10:00 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-finarb-analytics-consulting-kolkata-hyderabad-2-to-5-years-160226017620",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 09:59 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-shree-ganesh-remedies-ahmedabad-3-to-5-years-280926020485",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 09:57 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-robust-softech-private-limited-remote-2-to-7-years-280926500628",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 09:57 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Fullstack (React JS + Node JS) Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-fullstack-react-js-node-js-developer-infosys-limited-bengaluru-3-to-5-years-070926918777",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 06:13 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "ReactJS Node JS Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-reactjs-node-js-developer-infosys-limited-bengaluru-2-to-3-years-290926934392",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 06:12 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Node JS Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-agicent-technologies-noida-2-to-7-years-280926503258",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 06:11 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "React JS + Node JS Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-js-node-js-developer-infosys-hyderabad-chennai-bengaluru-3-to-5-years-020726025027",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 06:10 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Node Js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-infosys-hyderabad-pune-bengaluru-2-to-5-years-190826038463",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 06:09 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Python Software Developer-S",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-python-software-developer-s-infosys-hyderabad-chennai-bengaluru-3-to-5-years-100826024141",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-29 06:08 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Java Back End Developer | Springboot | Microservices",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-back-end-developer-springboot-microservices-infosys-hyderabad-chennai-bengaluru-3-to-6-years-110826000033",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-29 06:07 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Java React FullStack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-react-fullstack-developer-deloitte-us-india-offices-hyderabad-chennai-bengaluru-3-to-8-years-021225021467",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 05:42 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Front End Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-front-end-developer-yotta-infrastructure-navi-mumbai-3-to-5-years-280926008977",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-29 05:41 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "React Js Frontend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-js-frontend-developer-smart-energy-water-noida-2-to-7-years-290926023628",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 05:40 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Python and Django Developer-S",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-python-and-django-developer-s-infosys-hyderabad-chennai-bengaluru-2-to-3-years-120826000158",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-29 05:40 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Software Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-engineer-gra-enterprises-chennai-chennai-0-to-5-years-290926025287",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-29 05:38 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Mern Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-mern-stack-developer-nihar-info-global-ltd-hyderabad-2-to-5-years-290926918990",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 05:37 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Python Django Lead",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-python-django-lead-infosys-limited-bengaluru-2-to-7-years-280926920761",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-29 05:37 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Agentic AI framework Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-agentic-ai-framework-full-stack-developer-sunrise-biztech-systems-hyderabad-3-to-6-years-290926019171",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 05:36 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Lead- Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-lead-full-stack-developer-tivargrex-technologies-hyderabad-chennai-bengaluru-3-to-6-years-290926021965",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 02:55 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-zodiac-hr-consultants-pune-2-to-7-years-290926020539",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-29 02:54 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Drone engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-drone-engineer-peymagen-darjeeling-2-to-7-years-260926008743",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-28 12:57 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Pricing Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-pricing-engineer-polycab-vadodara-3-to-5-years-260926005561",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-28 12:57 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-engineer-jyoti-limited-vadodara-2-to-3-years-260926005396",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-28 12:55 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Full Stack Engineer - Laravel,PHP,React ,Vite",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-engineer-laravel-php-react-vite-morphosis-business-services-bengaluru-3-to-5-years-270926003709",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-28 12:55 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Full Stack Agentic AI Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-agentic-ai-engineer-prominent-staffing-pune-bengaluru-mumbai-all-areas-3-to-10-years-270926003701",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-28 12:54 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Applied AI Solution Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-applied-ai-solution-engineer-kearney-bengaluru-3-to-7-years-101225000349",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-28 11:38 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "API Integration Specialist",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-api-integration-specialist-hindavi-technologies-pune-3-to-6-years-280926001657",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-28 11:37 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "L1 Production Support Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-l1-production-support-engineer-honeybee-tech-solutions-bengaluru-3-to-6-years-280926003678",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-28 11:36 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Deputy Manager - Protection Underwriting",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-deputy-manager-protection-underwriting-axis-max-life-insurance-raipur-2-to-7-years-280926004701",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-28 11:35 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "IBM ACE Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-ibm-ace-developer-rayhawks-technology-navi-mumbai-2-to-6-years-280926001239",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-28 11:34 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Technical Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-technical-developer-kahan-technologies-bengaluru-0-to-5-years-280926001652",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-28 11:33 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Senior AI Full Stack Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-ai-full-stack-engineer-zitrino-innovative-solutions-coimbatore-3-to-8-years-280926004425",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-28 11:32 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Hiring PHP Developer(3-4years Exp) Immediate Joiners Preferred",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-hiring-php-developer-3-4years-exp-immediate-joiners-preferred-tya-business-solutions-bengaluru-3-to-4-years-290925027979",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-28 11:31 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-honeybee-tech-solutions-pune-3-to-5-years-260826013134",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-28 11:30 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Back End Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-back-end-developer-mufin-green-finance-new-delhi-3-to-5-years-280926015312",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-28 04:25 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Senior Backend Software Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-backend-software-engineer-ltm-bengaluru-3-to-8-years-280926014947",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-28 04:23 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Asp.Net Web Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-asp-net-web-developer-easemytrip-com-noida-3-to-8-years-210424002442",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-28 04:19 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Fullstack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-fullstack-developer-gnanam-institute-for-training-in-advanced-analytic-s-chennai-3-to-6-years-280926013583",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-28 04:18 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Front-End Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-front-end-developer-qcs-dc-labs-bengaluru-bengaluru-0-to-5-years-280926914333",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-28 04:17 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Full Stack Developer / Product Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-product-engineer-superbotics-virudhunagar-1-to-3-years-280926012456",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-28 03:46 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Sr .NET Full Stack Developer - Gurgaon(WFO)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-sr-net-full-stack-developer-gurgaon-wfo-amosta-gurugram-3-to-5-years-150626005519",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-28 03:44 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "AWS Bedrock Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-aws-bedrock-developer-infosys-hyderabad-2-to-5-years-260926008054",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-27 11:25 PM",
+   "date": "2026-09-27"
+  },
+  {
+   "title": ".NET Software Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-net-software-developer-infosys-pune-chennai-delhi-ncr-3-to-5-years-260926009395",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-27 11:24 PM",
+   "date": "2026-09-27"
+  },
+  {
+   "title": "Bluetooth Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-bluetooth-developer-sohail-khan-chennai-3-to-8-years-270926001374",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-27 11:23 PM",
+   "date": "2026-09-27"
+  },
+  {
+   "title": "Full-Stack Digital Marketing & Web Specialist",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-digital-marketing-web-specialist-naturelink-organics-pimpri-chinchwad-0-to-5-years-260926007080",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-27 11:22 PM",
+   "date": "2026-09-27"
+  },
+  {
+   "title": "Software Engineer And Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-engineer-and-developer-balasundaram-santosh-noida-gurugram-delhi-ncr-0-to-5-years-040824001512",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "AI: possible match",
+   "applied_at": "2026-09-27 11:22 PM",
+   "date": "2026-09-27"
+  },
+  {
+   "title": "Dot Net Developer (React)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-dot-net-developer-react-see-outside-surabhi-placement-services-pune-pune-3-to-6-years-270926003179",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-27 11:21 PM",
+   "date": "2026-09-27"
+  },
+  {
+   "title": "Senior Full Stack Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-full-stack-engineer-whyflex-human-capital-solutions-bengaluru-3-to-8-years-270926003363",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-27 11:20 PM",
+   "date": "2026-09-27"
+  },
+  {
+   "title": "Laravel Developer (PHP + Node.js)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-laravel-developer-php-node-js-swaggy-infolabs-faridabad-1-to-3-years-270926003638",
+   "applicants": "",
+   "posted_ago": "",
+   "reason": "good skill match",
+   "applied_at": "2026-09-27 11:12 PM",
+   "date": "2026-09-27"
+  },
   {
    "title": "Backend Python Developer (Lucknow Candidate Only)",
    "company": "",
@@ -408,6 +1628,3038 @@
   }
  ],
  "skipped": [
+  {
+   "title": "TEST ENGINEER - Casino Gaming",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-test-engineer-casino-gaming-happiest-minds-technologies-pvt-ltd-noida-2-to-4-years-011026502242",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 10:57 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "JavaScript Developer (React.js)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-javascript-developer-react-js-vinayak-solutions-pvt-limited-remote-2-to-7-years-011026502802",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 10:57 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Software Development Engineer 2 (SDE 2)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-development-engineer-2-sde-2-bonito-designs-greater-noida-3-to-7-years-011026934186",
+   "reason": "detail fail Page.goto: Target page, context or browser has been closed",
+   "skipped_at": "2026-10-01 10:57 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Software Development Engineer 2 (SDE 2)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-development-engineer-2-sde-2-bonito-designs-noida-3-to-7-years-011026934188",
+   "reason": "detail fail Page.goto: Target page, context or browser has been closed",
+   "skipped_at": "2026-10-01 10:57 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Application Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-application-developer-accenture-solutions-pvt-ltd-hyderabad-2-to-5-years-011026927071",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 10:56 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Application Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-application-developer-accenture-solutions-pvt-ltd-noida-3-to-8-years-011026926770",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 10:56 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Software Engineer - Frontend Developer (Angular)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-engineer-frontend-developer-angular-renesas-electronics-india-pvt-ltd-bengaluru-3-to-8-years-011026501527",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 10:56 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Frontend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-developer-jethitech-solutions-hybrid-2-to-4-years-011026503104",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 10:56 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Software Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-developer-dream-tekis-software-pvt-ltd-bengaluru-2-to-5-years-011026501036",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 10:55 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Fullstack Dev-Reat and Node",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-fullstack-dev-reat-and-node-vserve-ebusiness-solutions-pvt-ltd-coimbatore-2-to-4-years-011026503499",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 10:55 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Full Stack Developer (MERN + Angular)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-mern-angular-acevin-solutions-mumbai-3-to-8-years-011026502572",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 10:55 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Angular Developer (Version 20+)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-angular-developer-version-20-honeybee-tech-solutions-pune-3-to-7-years-011026023681",
+   "reason": "blocked title (angular)",
+   "skipped_at": "2026-10-01 10:55 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Ruby on Rails Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-ruby-on-rails-developer-vinayak-solutions-pvt-limited-remote-2-to-7-years-011026502803",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 10:55 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Application Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-application-developer-accenture-solutions-pvt-ltd-hyderabad-2-to-5-years-011026925468",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 10:55 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Application Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-application-developer-accenture-solutions-pvt-ltd-bengaluru-2-to-5-years-011026926265",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 10:55 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "MERN Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-mern-developer-rimpac-hr-services-llp-pune-bengaluru-1-to-5-years-011026929336",
+   "reason": "apply failed",
+   "skipped_at": "2026-10-01 10:49 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Engineer - Target India-8",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-engineer-target-india-8-target-bengaluru-2-to-4-years-300926502340",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 02:02 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": ".NET / React - Full-Stack Engineer (Surat Location On-Site)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-net-react-full-stack-engineer-surat-location-on-site-octopus-technologies-surat-2-to-5-years-011026016334",
+   "reason": "blocked title (net)",
+   "skipped_at": "2026-10-01 02:02 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "API Testing",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-api-testing-infosys-hyderabad-chennai-bengaluru-3-to-8-years-300926027977",
+   "reason": "apply failed",
+   "skipped_at": "2026-10-01 02:01 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "PHP Backend Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-php-backend-engineer-mobisoft-labs-remote-0-to-3-years-300926504468",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 02:01 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Software Engineer I (Java Backend, Go Preferred)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-engineer-i-java-backend-go-preferred-precisely-noida-2-to-4-years-300926504688",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 02:01 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Custom Software Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-custom-software-engineer-accenture-solutions-pvt-ltd-chennai-3-to-8-years-011026916680",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 02:00 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Backend Developer (Django)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-backend-developer-django-aptagrim-consulting-llp-hyderabad-3-to-5-years-300926501757",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 02:00 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Java React Developer (2-3yrs) @ Infosys",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-react-developer-2-3yrs-infosys-infosys-hyderabad-pune-bengaluru-2-to-3-years-190926016685",
+   "reason": "blocked title (java)",
+   "skipped_at": "2026-10-01 01:59 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Java React Developer (2-3 yrs) @ Infosys",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-react-developer-2-3-yrs-infosys-infosys-hyderabad-pune-bengaluru-2-to-3-years-190926012114",
+   "reason": "blocked title (java)",
+   "skipped_at": "2026-10-01 01:59 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Java FullStack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-fullstack-developer-deloitte-us-india-offices-hyderabad-chennai-bengaluru-3-to-8-years-011026018857",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-10-01 01:59 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Java Springboot Microservices (2-3yrs) @ Infosys",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-springboot-microservices-2-3yrs-infosys-infosys-hyderabad-chennai-bengaluru-2-to-3-years-190926020630",
+   "reason": "blocked title (java spring)",
+   "skipped_at": "2026-10-01 01:59 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Java Springboot Microservices (2-3yrs) @ Infosys",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-springboot-microservices-2-3yrs-infosys-infosys-hyderabad-chennai-bengaluru-2-to-3-years-190926020625",
+   "reason": "blocked title (java spring)",
+   "skipped_at": "2026-10-01 01:59 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Java React Developer (3-5 yrs) @ Infosys",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-react-developer-3-5-yrs-infosys-infosys-hyderabad-pune-bengaluru-3-to-5-years-190926012142",
+   "reason": "blocked title (java)",
+   "skipped_at": "2026-10-01 01:59 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "JAVA + REACT (3-5yrs) @ Infosys",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-react-3-5yrs-infosys-infosys-hyderabad-chennai-bengaluru-3-to-5-years-190926020331",
+   "reason": "blocked title (java)",
+   "skipped_at": "2026-10-01 01:59 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Java React Developer (3-5yrs) @ Infosys",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-react-developer-3-5yrs-infosys-infosys-hyderabad-pune-bengaluru-3-to-5-years-190926016742",
+   "reason": "blocked title (java)",
+   "skipped_at": "2026-10-01 01:59 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Java Springboot Microservices (3-5yrs) @ Infosys",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-springboot-microservices-3-5yrs-infosys-infosys-hyderabad-chennai-bengaluru-3-to-5-years-190926020649",
+   "reason": "blocked title (java spring)",
+   "skipped_at": "2026-10-01 01:59 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Java Springboot Microservices (3-5yrs) @ Infosys",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-springboot-microservices-3-5yrs-infosys-infosys-hyderabad-chennai-bengaluru-3-to-5-years-190926020643",
+   "reason": "blocked title (java spring)",
+   "skipped_at": "2026-10-01 01:59 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Software Engineer - (C#/.NET & React)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-engineer-c-net-react-aelius-consultants-delhi-chennai-bengaluru-3-to-5-years-300926030239",
+   "reason": "blocked title (net)",
+   "skipped_at": "2026-10-01 01:59 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Full Stack Software Engineer - Ai & Automation",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-software-engineer-ai-automation-unity-fincorp-noida-3-to-8-years-011026016138",
+   "reason": "apply failed",
+   "skipped_at": "2026-10-01 01:58 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Senior Frontend Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-frontend-engineer-secqureone-inc-chennai-2-to-4-years-300926502422",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 01:58 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Web3 Frontend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-web3-frontend-developer-sequere-technologies-mohali-3-to-8-years-300926502779",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 01:57 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "NECSWS Frontend Developer - Angular",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-necsws-frontend-developer-angular-nec-software-solutions-india-mumbai-2-to-6-years-300926503538",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 01:57 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Frontend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-developer-witqualis-technologies-faridabad-2-to-4-years-300926502819",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 01:57 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Web Designer & Frontend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-web-designer-frontend-developer-city-light-infotech-nadia-1-to-4-years-300926504245",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 01:57 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Python Developer (Django + AWS) @ Infosys",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-python-developer-django-aws-infosys-infosys-hyderabad-chennai-bengaluru-3-to-5-years-190926016146",
+   "reason": "apply failed",
+   "skipped_at": "2026-10-01 01:57 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Frontend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-developer-vayve-technologies-mumbai-1-to-5-years-300926504437",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 01:56 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Front-End Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-front-end-developer-tiltlabs-thiruvananthapuram-1-to-4-years-300926504168",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 01:56 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Frontend Developer (Next.js)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-developer-next-js-aptagrim-consulting-llp-hyderabad-2-to-5-years-300926501767",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 01:56 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Fullstack Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-fullstack-engineer-techila-global-services-pune-3-to-6-years-011026015365",
+   "reason": "apply failed",
+   "skipped_at": "2026-10-01 01:55 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "MERN Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-mern-developer-dentsu-inc-bengaluru-3-to-5-years-300926501676",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 01:53 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Java Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-beauto-systems-private-limited-pune-3-to-5-years-300926502884",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 01:52 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Software Engineer III - Java Full Stack Developer + GenAI / LLM + AWS",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-engineer-iii-java-full-stack-developer-genai-llm-aws-jp-morgan-and-chase-bengaluru-3-to-8-years-300926503340",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 01:52 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-propcid-infotech-private-limited-noida-2-to-5-years-300926504342",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 01:52 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Java Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-net-connect-hyderabad-3-to-7-years-300926033768",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-10-01 01:52 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Dotnet Full Stack Developer (React + Redux + Azure)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-dotnet-full-stack-developer-react-redux-azure-psr-tek-pune-bengaluru-3-to-7-years-300926504540",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 01:52 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Full-Stack AI Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-ai-developer-teckvalley-india-private-limited-noida-3-to-8-years-011026913129",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-10-01 01:52 PM",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Sr. Full Stack Engineer (Agentic AI + MERN)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-sr-full-stack-engineer-agentic-ai-mern-grazitti-interactive-mohali-chandigarh-panchkula-3-to-8-years-140826027859",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 12:45 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Developer (R&D)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-r-d-learncap-academy-udupi-2-to-4-years-300926011191",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 12:33 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Backend Developer (Node.js and Nest.js developer)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-backend-developer-node-js-and-nest-js-developer-weetech-solution-pvt-ltd-surat-0-to-1-years-300925505100",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 12:18 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Node Js - React Backend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-react-backend-developer-crescendo-global-leadership-hiring-india-noida-gurugram-delhi-ncr-4-to-9-years-300626002714",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 12:18 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Sr. Developer (Full Stack , React & Node.js/NestJS)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-sr-developer-full-stack-react-node-js-nestjs-metaplore-solutions-private-limited-bengaluru-5-to-8-years-300426501971",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 12:18 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Node JS Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-node-js-developer-ateamindia-thiruvananthapuram-5-to-10-years-300326502799",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 12:18 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Backend Developer - Node.js",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-backend-developer-node-js-cloud-counselage-pvt-ltd-hyderabad-4-to-8-years-301225508153",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 12:17 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Node.JS Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-agiletech-info-solutions-chennai-3-to-7-years-301219500913",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 12:17 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "React with Node.js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-with-node-js-developer-technerds-solutions-pvt-ltd-chennai-3-to-6-years-301025505708",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 12:17 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Node Js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-woxro-technology-solutions-pvt-ltd-thrissur-2-to-6-years-301025505044",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 12:17 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Node JS Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-yiion-systems-mehsana-2-to-5-years-301025504091",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 12:17 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Software Developer - Production Support",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-software-developer-production-support-randstad-pune-2-to-5-years-300926009767",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 12:15 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "4 Yrs Full Stack Developer React + Frappe",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-4-yrs-full-stack-developer-react-frappe-hr-india-solutions-delhi-ncr-2-to-5-years-300926908036",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 12:04 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-full-stack-developer-omnicom-global-solutions-hyderabad-chennai-bengaluru-3-to-5-years-300926008347",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 12:00 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Industry Subject Matter Advisor",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-industry-subject-matter-advisor-accenture-solutions-pvt-ltd-chennai-3-to-8-years-290926936576",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:57 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Web Developer Associate",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-web-developer-associate-accenture-solutions-pvt-ltd-mumbai-1-to-3-years-300926904186",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:57 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Web Developer Associate",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-web-developer-associate-accenture-solutions-pvt-ltd-mumbai-1-to-3-years-300926903988",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:57 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Web Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-web-developer-nexus-india-india-0-to-3-years-300926005934",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 11:57 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Salesforce Developer with Copado expertise",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-salesforce-developer-with-copado-expertise-cgi-information-systems-and-management-consultants-bengaluru-3-to-8-years-290926917658",
+   "reason": "blocked title (salesforce)",
+   "skipped_at": "2026-09-30 11:57 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Web Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-web-developer-3g-logic-infotech-p-ltd-noida-1-to-3-years-290926503287",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:57 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Developer Intern",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-developer-intern-razobyte-softtech-gurugram-0-to-5-years-290926502538",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:57 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Web Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-web-developer-india-cvsn-technologies-pvt-ltd-gurugram-2-to-4-years-290926500138",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:57 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Salesforce Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-salesforce-developer-kvp-business-solutions-bengaluru-3-to-5-years-290926037287",
+   "reason": "blocked title (salesforce)",
+   "skipped_at": "2026-09-30 11:57 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Frontend QA Analyst",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-frontend-qa-analyst-welocalize-india-llp-india-0-to-5-years-290926024243",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:57 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "React and Node JS Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-and-node-js-developer-fablead-developers-technolab-surat-1-to-6-years-290526507610",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:53 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-engineer-mastercard-pune-0-to-7-years-290926502398",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:52 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Engineer II",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-engineer-ii-mastercard-mumbai-1-to-7-years-290926502396",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:52 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Associate Software Engineer Intern - YMS",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-associate-software-engineer-intern-yms-kaleris-chennai-0-to-5-years-290926502243",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:52 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Lead Software Development Engineer in Test",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-lead-software-development-engineer-in-test-welocalize-india-llp-india-0-to-5-years-290926024429",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:52 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Software Development Engineer in Test",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-software-development-engineer-in-test-welocalize-india-llp-india-0-to-5-years-290926024341",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:52 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Ent Surgeon",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-ent-surgeon-doctors-door-health-care-staffing-and-consultant-l-lp-wayanad-1-to-6-years-290926938733",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 11:51 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Node.js Developer Team Lead - AI Expertise",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-node-js-developer-team-lead-ai-expertise-ais-technolabs-ahmedabad-3-to-8-years-290926039833",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 11:51 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Verification Engineer -2448",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-verification-engineer-2448-sunrise-biztech-systems-bengaluru-3-to-5-years-310826006871",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 11:51 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Full Stack Developer (Node JS + React JS)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-full-stack-developer-node-js-react-js-clover-infotech-dubai-9-to-14-years-310826010179",
+   "reason": "needs 9+ yrs",
+   "skipped_at": "2026-09-30 11:50 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Node Js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-tata-consultancy-services-hyderabad-chennai-bengaluru-6-to-10-years-310826009199",
+   "reason": "needs 6+ yrs",
+   "skipped_at": "2026-09-30 11:50 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Java Full Stack Developer (React JS)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-react-js-tata-consultancy-services-hyderabad-chennai-bengaluru-8-to-12-years-310826003026",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-30 11:50 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "React Js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-js-developer-techno-comp-tci-hyderabad-6-to-10-years-310826002194",
+   "reason": "needs 6+ yrs",
+   "skipped_at": "2026-09-30 11:50 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Full-Stack Node.js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-full-stack-node-js-developer-beo-software-kochi-ernakulam-4-to-8-years-310726011138",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 11:50 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Developer- Node.js/Javascript Guru",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-developer-node-js-javascript-guru-tradeboox-new-delhi-1-to-6-years-310724500329",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:50 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Junior Node JS Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-junior-node-js-developer-the-caravan-magazine-new-delhi-3-to-8-years-310523501866",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:50 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "React.js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-js-developer-ovitech-solutions-remote-1-to-10-years-310326502528",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:50 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "React.js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-js-developer-sthapatya-software-pvt-ltd-pune-3-to-5-years-311225501094",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:49 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "React . js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-js-developer-appsinvo-pvt-ltd-noida-1-to-3-years-311221500975",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:49 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Node JS Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-xceptive-solutions-llp-ahmedabad-2-to-5-years-311025502132",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:49 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "React.js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-js-developer-jexcore-infotech-private-limited-ahmedabad-2-to-4-years-311025501372",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:49 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Web Developer (PHP / Node.js / Full-Stack)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-web-developer-php-node-js-full-stack-uws-inc-uwsi-jaipur-0-to-3-years-310826505235",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:49 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Node.js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-triton-information-technology-solutions-chennai-2-to-7-years-310826501900",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:49 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Trainee React JS Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-trainee-react-js-developer-smartscripts-private-limited-hybrid-0-to-1-years-310826500041",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:49 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "React JS Developer-Quest Global-Pune",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-js-developer-quest-global-pune-quest-global-pune-6-to-6-years-310826027109",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 11:49 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Node.js Backend Developer ( FinTech Domain)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-node-js-backend-developer-fintech-domain-avisoft-mumbai-all-areas-8-to-13-years-310826023545",
+   "reason": "needs 8+ yrs",
+   "skipped_at": "2026-09-30 11:49 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Full Stack Developer (Java, Node.js, JavaScript & Python)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-full-stack-developer-java-node-js-javascript-python-tata-consultancy-services-hyderabad-chennai-bengaluru-7-to-10-years-310826016571",
+   "reason": "needs 7+ yrs",
+   "skipped_at": "2026-09-30 11:49 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "React JS Developer-playwright",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-js-developer-playwright-mazenet-hyderabad-7-to-12-years-310826015484",
+   "reason": "needs 7+ yrs",
+   "skipped_at": "2026-09-30 11:49 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Node Js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-gsr-business-services-gurugram-2-to-3-years-310826014729",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 11:49 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Java Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-developer-smart-placement-services-mumbai-nagpur-pune-3-to-6-years-300926006148",
+   "reason": "blocked title (java developer)",
+   "skipped_at": "2026-09-30 11:42 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Front-End Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-front-end-developer-luxoft-india-llp-hyderabad-3-to-5-years-290926917258",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 11:42 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Front-End Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-front-end-developer-luxoft-india-llp-pune-3-to-5-years-290926917219",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 11:42 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Front-End Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-front-end-developer-luxoft-india-llp-bengaluru-3-to-5-years-290926917161",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 11:42 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Software Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-software-developer-emobomo-soft-pvt-ltd-hyderabad-3-to-7-years-290926503621",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:42 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Ent Surgeon",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-ent-surgeon-doctors-door-health-care-staffing-and-consultant-l-lp-idukki-1-to-6-years-290926939180",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 11:35 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Infra Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-infra-developer-millennium-consulting-india-private-limited-bengaluru-2-to-6-years-290926934511",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:35 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "AI Senior Software Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-ai-senior-software-engineer-mycomplianceoffice-hyderabad-gurugram-1-to-5-years-290926500967",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:34 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Custom Software Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-custom-software-engineer-accenture-solutions-pvt-ltd-bengaluru-3-to-8-years-290926937056",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:31 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Tech Interns Professional",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-tech-interns-professional-truscholar-amravati-0-to-5-years-290926501617",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:31 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Node . js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-letsapp-panaji-1-to-6-years-250926504104",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:30 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Node Js Developer-INF (2-3)YRS",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-inf-2-3-yrs-infosys-hyderabad-chennai-bengaluru-2-to-3-years-110826036685",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:30 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "ReactJS Node JS Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-reactjs-node-js-developer-infosys-limited-bengaluru-3-to-5-years-290926934205",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 11:29 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Java Cloud Senior Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-cloud-senior-developer-infosys-limited-bengaluru-3-to-5-years-290926934154",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 11:29 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Java Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-developer-infosys-limited-bengaluru-2-to-3-years-290926934098",
+   "reason": "blocked title (java developer)",
+   "skipped_at": "2026-09-30 11:29 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Application Developer-AWS Cloud FullStack",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-application-developer-aws-cloud-fullstack-ibm-india-pvt-limited-pune-3-to-9-years-290926933959",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:29 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Java Cloud Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-cloud-developer-infosys-limited-bengaluru-2-to-3-years-290926933947",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 11:29 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Python + FastAPI & Django Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-python-fastapi-django-developer-rubiscape-pune-3-to-6-years-290926504431",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:29 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Engineer III - Java Backend, AWS, Kafka",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-engineer-iii-java-backend-aws-kafka-jp-morgan-and-chase-hyderabad-3-to-8-years-290926503102",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:29 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "React Js Frontend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-js-frontend-developer-celebal-technologies-jaipur-3-to-8-years-300926005453",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 11:25 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Full-Stack AI Engineer / Senior Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-full-stack-ai-engineer-senior-developer-tothr-wayanad-thiruvananthapuram-3-to-6-years-030926008314",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 11:24 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Analyst",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-analyst-nab-new-delhi-bengaluru-2-to-11-years-290926502667",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:24 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Web Developer (PHP / WordPress / JS)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-web-developer-php-wordpress-js-formsadda-ranchi-0-to-5-years-290926501465",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:22 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack DoTNET & Angular Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-dotnet-angular-developer-persistent-pune-2-to-5-years-290926024530",
+   "reason": "blocked title (angular)",
+   "skipped_at": "2026-09-30 11:22 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-visioneinfotech-surat-2-to-7-years-290926504364",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:21 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Product Manager",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-product-manager-visa-consolidated-support-services-india-pvt-ltd-bengaluru-3-to-8-years-290926937186",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:15 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Java Developer BlueHippo Core Platform (AWS, Web Services AI)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-developer-bluehippo-core-platform-aws-web-services-ai-skynetappdev-hyderabad-3-to-8-years-290926000453",
+   "reason": "blocked title (java developer)",
+   "skipped_at": "2026-09-30 11:12 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Front-end Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-front-end-developer-kare4u-healthcare-solutions-pvt-ltd-bhubaneswar-3-to-5-years-290926501425",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:11 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Web Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-web-developer-vyavsaay-digiworld-pvt-ltd-pune-1-to-3-years-290926501462",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:11 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Quality Assurance Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-quality-assurance-engineer-sutherland-global-services-inc-chennai-3-to-8-years-290926504508",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:10 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Devleopment Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-devleopment-engineer-venwiz-bengaluru-3-to-5-years-290926504311",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:10 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Backend & DevOps Engineer (Golang)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-backend-devops-engineer-golang-intelizign-lifecycle-services-chennai-3-to-7-years-250826020092",
+   "reason": "blocked title (devops)",
+   "skipped_at": "2026-09-30 11:10 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "It Recruiter",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-it-recruiter-intellics-global-services-hyderabad-chennai-bengaluru-1-to-5-years-030926017338",
+   "reason": "blocked title (recruiter)",
+   "skipped_at": "2026-09-30 11:09 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "React Native Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-native-developer-theplanetsoft-surat-1-to-5-years-290926501439",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:08 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Junior Node.js developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-junior-node-js-developer-vanilla-networks-thiruvananthapuram-0-to-2-years-200326504305",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:06 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Node . js developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-qalbit-solution-ahmedabad-2-to-5-years-280926503204",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:06 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "LFC_JD_Sr_Engineer(Node-JS developer) professional",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-lfc-jd-sr-engineer-node-js-developer-professional-spanbix-technologies-hyderabad-3-to-6-years-190526503924",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:06 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Node.js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-devgap-software-pvt-ltd-noida-noida-1-to-5-years-080420500915",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:06 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": ".NET core Senior Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-net-core-senior-developer-infosys-limited-bengaluru-3-to-5-years-290926934369",
+   "reason": "AI: weak match",
+   "skipped_at": "2026-09-30 11:04 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": ".NET cloud Senior Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-net-cloud-senior-developer-infosys-limited-bengaluru-3-to-5-years-290926933988",
+   "reason": "no description",
+   "skipped_at": "2026-09-30 11:04 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Web Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-web-developer-accenture-solutions-pvt-ltd-bengaluru-3-to-8-years-290926936785",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:04 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Software Engineer - Java, API's, Microservices, Angular/React",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-software-engineer-java-api-s-microservices-angular-react-visa-consolidated-support-services-india-pvt-ltd-bengaluru-3-to-6-years-290926934234",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:03 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full-Stack Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-engineer-rubiscape-pune-3-to-8-years-290926504383",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:02 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-engineer-accenture-solutions-pvt-ltd-bengaluru-3-to-8-years-290926937035",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:02 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Engineer - Java, Spring Boot, Microservices, AI",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-engineer-java-spring-boot-microservices-ai-optum-global-solutions-india-private-limited-noida-3-to-8-years-290926933607",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:02 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Java Selenium Automation Testing",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-selenium-automation-testing-infosys-hyderabad-chennai-bengaluru-3-to-8-years-050826031929",
+   "reason": "AI: weak match",
+   "skipped_at": "2026-09-30 11:01 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Automation Tester",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-automation-tester-infosys-hyderabad-chennai-bengaluru-3-to-8-years-240926035482",
+   "reason": "blocked title (tester)",
+   "skipped_at": "2026-09-30 11:01 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Api Tester",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-api-tester-infosys-hyderabad-chennai-bengaluru-3-to-8-years-230926037384",
+   "reason": "blocked title (tester)",
+   "skipped_at": "2026-09-30 11:01 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Automation Tester",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-automation-tester-infosys-hyderabad-bengaluru-mumbai-all-areas-3-to-8-years-240926037684",
+   "reason": "blocked title (tester)",
+   "skipped_at": "2026-09-30 11:01 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-engineer-accenture-solutions-pvt-ltd-gurugram-2-to-5-years-290926936998",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:01 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Backend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-backend-developer-febtech-it-solutions-roorkee-2-to-5-years-290926501399",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:00 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Java Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-developer-interra-information-technologies-inc-noida-3-to-5-years-290926503007",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:00 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Backend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-backend-developer-gsource-technologies-llc-pune-3-to-5-years-290926503645",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 11:00 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": ".NET Fullstack (REACT OR Angular)-INF",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-net-fullstack-react-or-angular-inf-infosys-hyderabad-chennai-bengaluru-3-to-5-years-300726029582",
+   "reason": "blocked title (angular)",
+   "skipped_at": "2026-09-30 10:59 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Mobile App Developer (Flutter / React Native)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-mobile-app-developer-flutter-react-native-pelicon-software-solutions-hyderabad-3-to-5-years-290926501472",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 10:59 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Custom Software Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-custom-software-engineer-accenture-solutions-pvt-ltd-bengaluru-3-to-8-years-290926936702",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 10:59 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Software Engineer - AI",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-software-engineer-ai-sitetracker-new-delhi-2-to-6-years-290926040360",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 10:57 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Engineer III",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-engineer-iii-reed-elsevier-india-a-part-of-relx-india-pvt-ltd-mumbai-gurugram-chennai-3-to-6-years-290926502475",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 10:57 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Med tech Software Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-med-tech-software-developer-idexcel-mysuru-3-to-6-years-290926026979",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 10:57 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Engineer - Java, Python, Angular or React or Next Js",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-engineer-java-python-angular-or-react-or-next-js-optum-global-solutions-india-private-limited-bengaluru-2-to-7-years-290926937162",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 10:55 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Tech S and T-Tech Cloud dev-C++ Engineer-RT-GDSF02",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-tech-s-and-t-tech-cloud-dev-c-engineer-rt-gdsf02-ernst-young-bengaluru-2-to-4-years-290926502413",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 10:54 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Oracle PLSQL Developer - INF (2-15) YRS",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-oracle-plsql-developer-inf-2-15-yrs-infosys-hyderabad-chennai-bengaluru-2-to-7-years-160926035399",
+   "reason": "AI: weak match",
+   "skipped_at": "2026-09-30 10:54 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Java Fullstack Senior Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-fullstack-senior-developer-infosys-limited-bengaluru-3-to-5-years-290926934084",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-30 10:53 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Python+Reactjs -INF(2 To 9)YRS",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-python-reactjs-inf-2-to-9-yrs-infosys-hyderabad-chennai-bengaluru-2-to-7-years-110826036374",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 10:53 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Java Angular Developer Bangalore",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-angular-developer-bangalore-infosys-pune-ahmedabad-bengaluru-3-to-8-years-230925037903",
+   "reason": "blocked title (angular)",
+   "skipped_at": "2026-09-30 10:53 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Reactjs + Nodejs -INF(2-3)YRS",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-reactjs-nodejs-inf-2-3-yrs-infosys-hyderabad-chennai-bengaluru-2-to-3-years-110826035744",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 10:52 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Java Fullstack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-fullstack-developer-infosys-limited-bengaluru-2-to-3-years-290926934472",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-30 10:52 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Java Fullstack Developer - L1",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-fullstack-developer-l1-indian-financial-technology-and-alliedservices-hyderabad-2-to-4-years-290926030946",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-30 10:52 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Software Engineer - React.js + Java",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-software-engineer-react-js-java-optum-global-solutions-india-private-limited-hyderabad-3-to-8-years-290926933452",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 10:51 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Custom Software Engineering Analyst",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-custom-software-engineering-analyst-accenture-solutions-pvt-ltd-bengaluru-3-to-5-years-290926936942",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 10:51 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Custom Software Engineering Analyst",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-custom-software-engineering-analyst-accenture-solutions-pvt-ltd-bengaluru-3-to-5-years-290926936941",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 10:51 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-engineer-accenture-solutions-pvt-ltd-mumbai-2-to-5-years-290926936767",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 10:50 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Custom Software Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-custom-software-engineer-accenture-solutions-pvt-ltd-gurugram-3-to-8-years-290926936197",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 10:50 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Custom Software Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-custom-software-engineer-accenture-solutions-pvt-ltd-pune-2-to-5-years-290926936507",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 10:50 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Java, Angular Full stack developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-angular-full-stack-developer-broadridge-financial-solutions-india-pvt-ltd-hyderabad-3-to-5-years-290926501964",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 10:49 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full stack web app Developers",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-web-app-developers-ethics-tech-chennai-2-to-5-years-290926501875",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 10:47 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Java Full Stack Developer (Spring Boot & Angular)-Hyderabad Location",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-spring-boot-angular-hyderabad-location-infosys-hyderabad-2-to-5-years-290926013469",
+   "reason": "blocked title (angular)",
+   "skipped_at": "2026-09-30 10:47 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Java Full Stack Developer ( Java + Angular)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-java-angular-induct-hr-solutions-thiruvananthapuram-2-to-6-years-110926020050",
+   "reason": "blocked title (angular)",
+   "skipped_at": "2026-09-30 10:46 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Opening with EY_ .Net Full stack Developer with Angular",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-opening-with-ey-net-full-stack-developer-with-angular-ey-kolkata-bengaluru-delhi-ncr-3-to-8-years-070926002440",
+   "reason": "blocked title (angular)",
+   "skipped_at": "2026-09-30 10:46 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Java Full Stack Developer - (Java + Angular)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-java-angular-bahwan-cybertek-mumbai-2-to-4-years-290926029223",
+   "reason": "blocked title (angular)",
+   "skipped_at": "2026-09-30 10:46 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Java Full Stack Developer-INF (2 To 8 YRS)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-inf-2-to-8-yrs-infosys-hyderabad-chennai-bengaluru-2-to-7-years-100826023694",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-30 10:46 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full stack developer (Python)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-python-proffer-it-consultancy-private-limited-chennai-3-to-7-years-300926501949",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:37 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Backend Engineer (Java / Dot Net)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-backend-engineer-java-dot-net-ixigo-bengaluru-2-to-3-years-300926501777",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:36 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full-Stack Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-engineer-proffer-it-consultancy-private-limited-mumbai-3-to-7-years-300926501961",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:36 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Developer AI Applications",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-ai-applications-red-road-healthcare-business-solutions-bengaluru-2-to-5-years-300926025823",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 03:34 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Node.js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-logituit-bengaluru-4-to-9-years-300926502122",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:33 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-engineer-digii-bengaluru-2-to-3-years-300926502743",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:33 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Salesforce Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-salesforce-engineer-psr-tek-chennai-3-to-7-years-300926501663",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:33 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "React Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-developer-elshaddai-global-solutions-tiruchirappalli-3-to-7-years-300926502510",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:32 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Backend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-backend-developer-plux-infosystems-private-limited-noida-2-to-5-years-300926501257",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:32 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Web Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-web-developer-plux-infosystems-private-limited-noida-1-to-5-years-300926501258",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:32 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Magento Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-magento-developer-plux-infosystems-private-limited-noida-3-to-7-years-300926501261",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:31 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Frontend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-developer-identiti-design-private-limited-bengaluru-3-to-8-years-300926502202",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:31 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Staff Software Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-staff-software-engineer-itron-bengaluru-2-to-6-years-300926502496",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:31 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Engineer, Associate",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-engineer-associate-infor-hyderabad-1-to-3-years-300926501796",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:30 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Development Engineer in Test (SDET 2 / Senior SDET)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-development-engineer-in-test-sdet-2-senior-sdet-zluri-bengaluru-3-to-6-years-300926501681",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:30 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "PHP Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-php-full-stack-developer-mdigitz-soft-solutions-kochi-2-to-4-years-300926501057",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:30 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "UI/UX Designer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-ui-ux-designer-change-networks-pvt-ltd-mumbai-2-to-5-years-300926501148",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:30 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Frontend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-developer-plux-infosystems-private-limited-noida-3-to-7-years-300926501262",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:30 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Frontend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-developer-hyspace-technologies-private-limited-bengaluru-3-to-8-years-300926500738",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:27 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Front-End Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-front-end-developer-radial-code-hisar-1-to-3-years-300926500551",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:26 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Software Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-software-engineer-orange-gurugram-3-to-10-years-300926501053",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:25 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Engineer - Full Stack Developer (Java+React)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-engineer-full-stack-developer-java-react-nec-software-solutions-india-pune-3-to-6-years-300926501119",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:25 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Developers",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-developers-rise-it-digital-llp-mumbai-2-to-7-years-300926500771",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:23 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-developer-dream-tekis-software-pvt-ltd-bengaluru-1-to-5-years-300926500788",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:23 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full-Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-nine-stack-north-goa-3-to-6-years-300926500784",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:21 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Asp.Net Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-asp-net-full-stack-developer-prudent-corporate-advisory-services-ltd-ahmedabad-2-to-5-years-300926500563",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:21 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-aucourant-technologies-pvt-ltd-dehradun-2-to-6-years-300926500448",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:21 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Frontend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-developer-nine-stack-north-goa-2-to-3-years-300926500786",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:21 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Frontend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-developer-ncrypted-technologies-rajkot-2-to-7-years-300926500823",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:21 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "React Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-developer-ncrypted-technologies-rajkot-3-to-8-years-300926500827",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:21 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack AI Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-ai-engineer-think41-bengaluru-2-to-4-years-300926500102",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:20 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full-Stack Engineer (React/Node)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-engineer-react-node-click-informatics-kanpur-2-to-6-years-300926500192",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:20 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Machine Learning Engineer (0-5)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-machine-learning-engineer-0-5-tech-mahindra-noida-pune-bengaluru-0-to-5-years-300926017847",
+   "reason": "no description",
+   "skipped_at": "2026-09-30 03:20 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior - Software Engineer QA",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-software-engineer-qa-hca-healthcare-hyderabad-3-to-5-years-300926500613",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:20 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-engineer-aucourant-technologies-pvt-ltd-dehradun-1-to-4-years-300926500437",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:20 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Backend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-backend-developer-abm-fintech-ghaziabad-2-to-7-years-300926500032",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:19 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Backend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-backend-developer-apex-2000-inc-pune-3-to-5-years-300926500001",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:19 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Backend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-backend-developer-axs-solutions-mumbai-3-to-5-years-300926500757",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:19 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Java Backend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-backend-developer-psr-tek-bengaluru-1-to-4-years-300926500151",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:19 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Java Backend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-backend-developer-psr-tek-mumbai-3-to-5-years-300926500145",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:19 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Backend Developer ( PHP , Python )",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-backend-developer-php-python-ncrypted-technologies-rajkot-3-to-8-years-300926500826",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:19 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "AI Engineer (0- 6)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-ai-engineer-0-6-tech-mahindra-noida-pune-bengaluru-1-to-6-years-300926016792",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 03:19 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-flynaut-llc-hyderabad-3-to-6-years-300926500344",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:18 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Front-end Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-front-end-developer-aucourant-technologies-pvt-ltd-dehradun-2-to-4-years-300926500446",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:18 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "UI/UX Designer & UI Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-ui-ux-designer-ui-developer-elshaddai-global-solutions-tiruchirappalli-3-to-8-years-300926500364",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:18 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Back-end Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-back-end-developer-aucourant-technologies-pvt-ltd-dehradun-2-to-4-years-300926500447",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:18 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Web Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-web-developer-aucourant-technologies-pvt-ltd-dehradun-1-to-4-years-300926500445",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:18 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Fullstack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-fullstack-developer-propcid-infotech-noida-2-to-3-years-300926018157",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 03:17 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "MERN Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-mern-stack-developer-flamboyant-technologies-noida-gurugram-3-to-4-years-300926500419",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:17 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Senior Frontend Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-frontend-engineer-teccorps-coimbatore-3-to-6-years-300926500012",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:17 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Backend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-backend-developer-nine-stack-north-goa-2-to-4-years-300926500332",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:17 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Web Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-web-developer-softrica-surat-1-to-4-years-300926500120",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:17 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Python Developer , django, JavaScript , HTML , CSS, Jquary",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-python-developer-django-javascript-html-css-jquary-psr-tek-chennai-1-to-5-years-300926500004",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:17 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Frontend / UI Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-ui-developer-abm-fintech-ghaziabad-3-to-7-years-300926500034",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:17 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Frontend Software Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-software-developer-pauls-techno-crafts-hyderabad-3-to-6-years-300926017057",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 03:17 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full-stack Developer - Technologies",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-technologies-avow-solutions-inc-chennai-2-to-7-years-300926500103",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:16 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-softrica-surat-2-to-6-years-300926500110",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:16 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full-Stack Developer (Laravel + React)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-laravel-react-teccorps-coimbatore-2-to-6-years-300926500009",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 03:16 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Fullstack Developer (Agentic/ Gen AI)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-fullstack-developer-agentic-gen-ai-tech-mahindra-noida-pune-bengaluru-0-to-5-years-300926018042",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 03:16 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Angular Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-angular-developer-rubiscape-pune-3-to-5-years-290926504376",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 02:06 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Custom Software Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-custom-software-engineer-accenture-solutions-pvt-ltd-bengaluru-2-to-5-years-280926926954",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 02:06 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Development Engineer II (Frontend)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-development-engineer-ii-frontend-sixt-rent-a-car-bengaluru-3-to-6-years-280926006178",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 02:05 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Frontend Engineer (React / TypeScript)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-engineer-react-typescript-rubiscape-pune-3-to-8-years-290926504399",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 02:05 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "React.js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-js-developer-flexiele-consulting-services-pvt-ltd-remote-1-to-3-years-290926501074",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 02:03 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Engineer (Frontend)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-engineer-frontend-simbian-bengaluru-1-to-3-years-290926503440",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 02:03 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Reactjs Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-reactjs-developer-theplanetsoft-surat-2-to-5-years-290926501437",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 02:03 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Software Development Engineer II (Frontend)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-development-engineer-ii-frontend-sixt-bengaluru-3-to-6-years-290926502968",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 02:03 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Frontend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-developer-febtech-it-solutions-roorkee-1-to-3-years-290926501401",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 02:02 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Frontend Developer - React JS, JavaScript, NextJS",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-developer-react-js-javascript-nextjs-jiovio-healthcare-madurai-3-to-5-years-290926501767",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 02:02 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "JAVA+Angular Developer - INF (2-15) YRS",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-angular-developer-inf-2-15-yrs-infosys-hyderabad-chennai-bengaluru-2-to-7-years-170926032578",
+   "reason": "blocked title (angular)",
+   "skipped_at": "2026-09-30 02:02 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "MERN Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-mern-developer-vyavsaay-digiworld-pvt-ltd-pune-1-to-3-years-290926501460",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 02:01 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-engineer-accenture-solutions-pvt-ltd-bengaluru-2-to-5-years-290926936827",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 02:01 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-engineer-accenture-solutions-pvt-ltd-mumbai-2-to-5-years-290926936843",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 02:01 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-engineer-accenture-solutions-pvt-ltd-mumbai-2-to-5-years-290926936995",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 02:01 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-zensar-technologies-pune-0-to-8-years-290926502220",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 01:38 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-bitblue-technology-palghar-1-to-6-years-290926501520",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 01:38 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Developers",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developers-crystree-solutions-private-limited-tiruchirappalli-2-to-6-years-290926501319",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 01:37 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-dealate-corp-visakhapatnam-2-to-6-years-290926501376",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 01:37 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Full Stack Developer - Noida",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-noida-twirll-noida-2-to-6-years-290926501452",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-30 01:37 AM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Fullstack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-fullstack-developer-deloitte-shared-services-india-bengaluru-2-to-6-years-120626008685",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-30 01:14 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Artificial Intelligence (AI) Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-artificial-intelligence-ai-engineer-transorg-analytics-noida-gurugram-mumbai-all-areas-3-to-6-years-050825026499",
+   "reason": "blocked title (artificial intelligence)",
+   "skipped_at": "2026-09-30 01:13 PM",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Api Tester",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-api-tester-infosys-noida-hyderabad-bengaluru-3-to-8-years-230926037523",
+   "reason": "blocked title (tester)",
+   "skipped_at": "2026-09-29 12:40 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Application Support Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-application-support-engineer-accenture-solutions-pvt-ltd-bengaluru-3-to-8-years-280926928417",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 12:39 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Backend & DevOps Engineer (C#)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-backend-devops-engineer-c-intelizign-lifecycle-services-chennai-2-to-6-years-280926031573",
+   "reason": "no description",
+   "skipped_at": "2026-09-29 12:39 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Java Backend Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-backend-engineer-luxoft-india-llp-hyderabad-3-to-5-years-290926917660",
+   "reason": "blocked title (java backend)",
+   "skipped_at": "2026-09-29 12:36 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Java Backend Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-backend-engineer-luxoft-india-llp-pune-3-to-5-years-290926917619",
+   "reason": "blocked title (java backend)",
+   "skipped_at": "2026-09-29 12:36 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Java Backend Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-backend-engineer-luxoft-india-llp-bengaluru-3-to-5-years-290926917476",
+   "reason": "blocked title (java backend)",
+   "skipped_at": "2026-09-29 12:35 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Staff Backend Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-staff-backend-engineer-affimintus-indore-1-to-3-years-280926503616",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 12:33 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Software Development Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-development-engineer-accenture-solutions-pvt-ltd-bengaluru-1-to-4-years-280926928208",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 12:33 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Application Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-application-developer-accenture-solutions-pvt-ltd-bengaluru-3-to-8-years-280926927235",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:30 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Angular Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-angular-developer-infosys-hyderabad-ahmedabad-bengaluru-3-to-8-years-200926014681",
+   "reason": "blocked title (angular)",
+   "skipped_at": "2026-09-29 10:30 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Application Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-application-developer-accenture-solutions-pvt-ltd-bengaluru-3-to-8-years-280926927148",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:30 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Application Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-application-developer-accenture-solutions-pvt-ltd-bengaluru-3-to-8-years-280926928286",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:30 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Application Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-application-developer-accenture-solutions-pvt-ltd-hyderabad-2-to-5-years-280926923790",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:30 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Application Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-application-developer-accenture-solutions-pvt-ltd-navi-mumbai-3-to-8-years-280926928726",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:30 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Application Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-application-developer-accenture-solutions-pvt-ltd-bengaluru-2-to-5-years-280926925513",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:30 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Application Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-application-developer-accenture-solutions-pvt-ltd-mumbai-3-to-8-years-280926922994",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:30 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Application Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-application-developer-accenture-solutions-pvt-ltd-indore-3-to-8-years-280926922076",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:30 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Application Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-application-developer-accenture-solutions-pvt-ltd-bengaluru-3-to-8-years-280926923757",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:30 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Application Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-application-developer-accenture-solutions-pvt-ltd-bengaluru-3-to-8-years-280926928419",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:30 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "MERN Stack Developer (WFO - Ahmedabad)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-mern-stack-developer-wfo-ahmedabad-solguruz-ahmedabad-3-to-5-years-280926501812",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:29 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "MERN Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-mern-stack-developer-techflux-solutions-nashik-1-to-6-years-280926501452",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:29 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Full Stack Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-engineer-accenture-solutions-pvt-ltd-bengaluru-2-to-5-years-280926926832",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:29 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Application Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-application-developer-accenture-solutions-pvt-ltd-bengaluru-2-to-5-years-280926928351",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:29 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Application Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-application-developer-accenture-solutions-pvt-ltd-bengaluru-3-to-8-years-280926928718",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:29 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Application Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-application-developer-accenture-solutions-pvt-ltd-bengaluru-3-to-8-years-280926927163",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:29 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Full Stack Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-engineer-accenture-solutions-pvt-ltd-bengaluru-2-to-5-years-280926928543",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:28 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "ASW Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-asw-developer-tangentia-remote-3-to-5-years-280926500841",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:21 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Fullatack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-fullatack-developer-photon-infotech-p-ltd-kolkata-mumbai-new-delhi-hyderabad-pune-chennai-bengaluru-3-to-8-years-090925500088",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:21 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Catalog Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-catalog-developer-han-digital-solution-warangal-hyderabad-nizamabad-3-to-7-years-241125507370",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:21 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Full Stack Developer ( Laravel / React )",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-laravel-react-rumbum-ahmedabad-3-to-5-years-280926503627",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:01 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Full-stack app developer (Part-time, Equity only)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-app-developer-part-time-equity-only-pd-consulting-remote-3-to-10-years-280926500520",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:01 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-cnergee-technologies-pvt-ltd-mumbai-3-to-5-years-280926501481",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 10:00 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-amsotics-singrauli-1-to-5-years-280926501348",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 09:58 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-troniqsrationale-technnologies-and-services-nagercoil-2-to-3-years-280926501395",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 09:58 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Java Full Stack Developer(React.js)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-react-js-infosys-kolkata-hyderabad-pune-2-to-5-years-100826024113",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-29 09:58 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-kintech-synergy-pvt-ltd-chennai-3-to-6-years-280926503327",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 09:58 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Java Full Stack Developer(React.js)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-react-js-infosys-kolkata-hyderabad-pune-2-to-7-years-280926032109",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-29 09:58 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Java Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-infosys-pune-bengaluru-delhi-ncr-2-to-3-years-100826024093",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-29 09:58 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Java Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-infosys-hyderabad-chennai-bengaluru-3-to-8-years-080826015529",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-29 09:58 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-amsotics-singrauli-1-to-5-years-280926501335",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 09:57 AM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Senior Node.js developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-node-js-developer-vanilla-networks-thiruvananthapuram-1-to-4-years-200326504307",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 06:14 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Node Js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-big-oh-tech-noida-2-to-6-years-240926502162",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 06:13 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Node Js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-infosys-hyderabad-chennai-bengaluru-5-to-8-years-190826038466",
+   "reason": "needs 5+ yrs",
+   "skipped_at": "2026-09-29 06:13 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Node.js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-interactive-bees-pvt-ltd-new-delhi-3-to-5-years-030426505562",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 06:13 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Node JS Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-open-wave-computing-services-pvt-ltd-chennai-3-to-7-years-151025504945",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 06:13 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Next.js / Node.js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-next-js-node-js-developer-akra-tech-chennai-2-to-7-years-150626504573",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 06:13 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Node . js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-fotis-technologies-pvt-ltd-bengaluru-2-to-7-years-100726508641",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 06:13 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Node Js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-tamilzorous-infotech-salem-1-to-6-years-250926500048",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 06:12 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Node Js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-psiborg-technologies-pvt-ltd-noida-1-to-6-years-090626503233",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 06:11 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Node JS Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-flexiele-consulting-services-pvt-ltd-noida-1-to-6-years-290926501021",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 06:10 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Node . JS Developers",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developers-vikruthi-technologies-kolkata-mumbai-new-delhi-hyderabad-pune-chennai-bengaluru-3-to-6-years-130624500252",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 06:10 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Node . Js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-garudauav-soft-solutions-pvt-ltd-noida-2-to-7-years-200426502819",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 06:10 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "React JS + Node JS Developer-S",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-js-node-js-developer-s-infosys-hyderabad-chennai-bengaluru-2-to-3-years-120826000299",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 06:10 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "SOCKET.IO/NODE.JS DEVELOPER",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-socket-io-node-js-developer-etoile-info-solutions-pvt-ltd-kolkata-mumbai-new-delhi-hyderabad-pune-chennai-bengaluru-2-to-4-years-011019500042",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 06:09 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Node.js Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-node-js-developer-webkype-info-services-pvt-ltd-noida-1-to-4-years-290926501016",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 06:09 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Python Backend Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-python-backend-engineer-aurous-consultancy-sdn-bhd-remote-3-to-8-years-290926500872",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 06:06 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Java Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-developer-noseberry-digitals-noida-3-to-5-years-290926503143",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 06:06 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Full Stack Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-engineer-accenture-solutions-pvt-ltd-bengaluru-2-to-5-years-280926927150",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 06:06 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "NBBL | Senior Associate Frontend developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-nbbl-senior-associate-frontend-developer-national-payments-corporation-of-india-npci-hyderabad-chennai-mumbai-all-areas-3-to-6-years-280926018278",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-29 05:45 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "React frontend developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-frontend-developer-qalbit-solution-ahmedabad-2-to-6-years-280926503206",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 05:45 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "UI developer ( Frontend Developer )",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-ui-developer-frontend-developer-trizone-entertainment-pvt-ltd-vadodara-2-to-5-years-280926501119",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 05:42 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Java fullstack Angular-S",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-fullstack-angular-s-infosys-hyderabad-chennai-bengaluru-2-to-7-years-240826031604",
+   "reason": "blocked title (angular)",
+   "skipped_at": "2026-09-29 05:42 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Frontend Developer (React)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-developer-react-domis-tech-pvt-ltd-remote-2-to-5-years-280926500778",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 05:39 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Frontend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-developer-goml-remote-3-to-8-years-280926500527",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 05:39 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Frontend Developers",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-developers-ngendev-technolabs-rajkot-2-to-7-years-280926503192",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 05:39 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Senior Frontend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-frontend-developer-goml-remote-3-to-8-years-280926500536",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 05:39 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Frontend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-developer-avixset-technologies-thiruvananthapuram-2-to-5-years-280926503032",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 05:39 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "React Frontend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-react-frontend-developer-onewaycab-baroda-taxi-cabs-ahmedabad-1-to-4-years-280926501410",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 05:38 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Frontend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-developer-amsotics-singrauli-1-to-5-years-280926501346",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 05:38 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Frontend Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-frontend-developer-coding-para-deoghar-3-to-8-years-280926503598",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 05:38 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-stack-developer-flexiele-consulting-services-pvt-ltd-noida-2-to-4-years-290926501020",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-29 05:35 PM",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "AI Engineer: Document Intelligence & Machine Learning",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-ai-engineer-document-intelligence-machine-learning-expergo-technologies-gurugram-2-to-5-years-280926000061",
+   "reason": "blocked title (machine learning)",
+   "skipped_at": "2026-09-28 12:58 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Automation Tester (2-10 YEARS )-PAN INDIA",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-automation-tester-2-10-years-pan-india-infosys-hyderabad-chennai-bengaluru-3-to-8-years-311025034087",
+   "reason": "blocked title (tester)",
+   "skipped_at": "2026-09-28 12:58 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "AWS +Terraform DevOps Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-aws-terraform-devops-engineer-infosys-hyderabad-3-to-5-years-260926008020",
+   "reason": "blocked title (devops)",
+   "skipped_at": "2026-09-28 12:57 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "DevOps Engineer-AWS + Terraform",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-devops-engineer-aws-terraform-infosys-hyderabad-3-to-5-years-110926024188",
+   "reason": "blocked title (devops)",
+   "skipped_at": "2026-09-28 12:57 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Senior Artificial Intelligence Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-senior-artificial-intelligence-engineer-whyflex-human-capital-solutions-bengaluru-3-to-8-years-270926003438",
+   "reason": "blocked title (artificial intelligence)",
+   "skipped_at": "2026-09-28 12:56 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Associate Software Engineer Manager - CC",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-associate-software-engineer-manager-cc-optum-global-solutions-india-private-limited-bengaluru-2-to-6-years-280926903974",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-28 11:37 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Security Engineer - AppSec",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-security-engineer-appsec-krazy-bee-services-bengaluru-2-to-4-years-280926005404",
+   "reason": "AI: weak match",
+   "skipped_at": "2026-09-28 11:37 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Custom Software Engineer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-custom-software-engineer-accenture-solutions-pvt-ltd-gurugram-3-to-8-years-280926903024",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-28 11:34 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Full satck developer Angular / React",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-full-satck-developer-angular-react-honeybee-tech-solutions-pune-3-to-5-years-040926014813",
+   "reason": "blocked title (angular)",
+   "skipped_at": "2026-09-28 11:33 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Java Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-developer-infosys-bengaluru-3-to-5-years-050626923352",
+   "reason": "blocked title (java developer)",
+   "skipped_at": "2026-09-28 11:32 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Software Engineer - Java/Sprinboot/Gen AI",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-engineer-java-sprinboot-gen-ai-wells-fargo-international-solutions-private-ltd-hyderabad-2-to-7-years-280926903679",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-28 11:32 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Sap Fiori Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-sap-fiori-full-stack-developer-randstad-hyderabad-gurugram-bengaluru-3-to-7-years-130426031094",
+   "reason": "blocked title (sap)",
+   "skipped_at": "2026-09-28 11:31 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Software-Java Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-java-developer-creative-hands-hr-hyderabad-chennai-bengaluru-0-to-5-years-280926000978",
+   "reason": "blocked title (java developer)",
+   "skipped_at": "2026-09-28 11:31 AM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Java Spring boot Developer with AWS",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-spring-boot-developer-with-aws-infosys-hyderabad-chennai-bengaluru-3-to-5-years-260426004474",
+   "reason": "blocked title (java spring)",
+   "skipped_at": "2026-09-28 04:25 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "QA Engineer-Java | Selenium",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-qa-engineer-java-selenium-infosys-hyderabad-chennai-bengaluru-3-to-5-years-240826023738",
+   "reason": "blocked title (qa)",
+   "skipped_at": "2026-09-28 04:25 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Java Production Support",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-production-support-infosys-hyderabad-chennai-bengaluru-3-to-8-years-060426029861",
+   "reason": "AI: weak match",
+   "skipped_at": "2026-09-28 04:25 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Java developer-- PAN INDIA",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-developer-pan-india-infosys-hyderabad-chennai-bengaluru-3-to-6-years-100826022832",
+   "reason": "blocked title (java developer)",
+   "skipped_at": "2026-09-28 04:25 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Software Engineer - Java Fullstack",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-engineer-java-fullstack-optum-global-solutions-india-private-limited-noida-2-to-7-years-280926903916",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-28 04:24 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Python+Reactjs -INF(2 To 9)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-python-reactjs-inf-2-to-9-infosys-hyderabad-chennai-bengaluru-2-to-7-years-130826009208",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-28 04:23 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Fullstack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-fullstack-developer-gemba-concepts-bengaluru-2-to-3-years-280926013232",
+   "reason": "AI: weak match",
+   "skipped_at": "2026-09-28 04:20 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Fullstack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-fullstack-developer-gemba-concepts-bengaluru-2-to-3-years-070826017981",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-28 04:19 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "JAVA+Angular Developer - INF (2-15) YRS",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-angular-developer-inf-2-15-yrs-infosys-hyderabad-chennai-bengaluru-2-to-7-years-170926033066",
+   "reason": "blocked title (angular)",
+   "skipped_at": "2026-09-28 04:18 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Java Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-infosys-hyderabad-chennai-bengaluru-3-to-7-years-310526004062",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-28 03:46 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Java Full Stack Developer- B",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-b-infosys-hyderabad-chennai-bengaluru-3-to-8-years-010526021546",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-28 03:45 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Java Full Stack Developer- B",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-b-infosys-hyderabad-chennai-bengaluru-3-to-8-years-230426034548",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-28 03:45 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Java Full Stack Developer(Angular/React)(2-3 years)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-angular-react-2-3-years-infosys-hyderabad-chennai-bengaluru-2-to-3-years-030826024220",
+   "reason": "blocked title (angular)",
+   "skipped_at": "2026-09-28 03:44 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Java Full Stack Developer (React js)_ (2-3 Years)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-react-js-2-3-years-infosys-hyderabad-chennai-bengaluru-2-to-3-years-190826009541",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-28 03:44 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Java Full Stack Developer- Pan India",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-pan-india-infosys-pune-chennai-bengaluru-2-to-3-years-040826031507",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-28 03:44 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Java Full Stack Developer-PAN INDIA",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-pan-india-infosys-hyderabad-pune-chennai-2-to-3-years-100826023017",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-28 03:44 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Java Full Stack Developer(Angular)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-angular-infosys-hyderabad-chennai-bengaluru-2-to-5-years-020726025175",
+   "reason": "blocked title (angular)",
+   "skipped_at": "2026-09-28 03:44 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Java Full Stack Developer-INF (2 To 8 YRS)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-inf-2-to-8-yrs-infosys-hyderabad-chennai-bengaluru-2-to-7-years-110826008302",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-28 03:44 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Walk-in || Java Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-idbi-intech-navi-mumbai-2-to-4-years-280926010235",
+   "reason": "external/no in-site apply",
+   "skipped_at": "2026-09-28 03:44 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Java Full Stack Developer (React)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-react-infosys-pune-chennai-bengaluru-3-to-5-years-280526030778",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-28 03:44 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Java Full Stack Developer (Angular)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-angular-infosys-pune-chennai-bengaluru-3-to-5-years-280526030842",
+   "reason": "blocked title (angular)",
+   "skipped_at": "2026-09-28 03:44 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Java Full Stack Developer (Angular)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-angular-infosys-pune-chennai-bengaluru-3-to-5-years-280526030601",
+   "reason": "blocked title (angular)",
+   "skipped_at": "2026-09-28 03:44 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Java Full Stack Developer- PAN INDIA",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-pan-india-infosys-hyderabad-chennai-bengaluru-3-to-5-years-100826004361",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-28 03:44 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Java Full Stack Developer -Hyderabad -g ( 3-5 yrs)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-hyderabad-g-3-5-yrs-infosys-hyderabad-chennai-bengaluru-3-to-5-years-270426034007",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-28 03:44 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Java Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-infosys-pune-chennai-bengaluru-2-to-3-years-070826009006",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-28 03:43 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Java Full Stack Developer",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-java-full-stack-developer-infosys-hyderabad-pune-bengaluru-2-to-3-years-070826008760",
+   "reason": "blocked title (java full)",
+   "skipped_at": "2026-09-28 03:43 PM",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Software Development Instructor-DSA",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-software-development-instructor-dsa-nxtwave-disruptive-technologies-hyderabad-pune-delhi-ncr-0-to-3-years-260926006782",
+   "reason": "apply failed",
+   "skipped_at": "2026-09-27 11:25 PM",
+   "date": "2026-09-27"
+  },
+  {
+   "title": "Intern Software Engineer (Internship-to-Hire)",
+   "company": "",
+   "url": "https://www.naukri.com/job-listings-intern-software-engineer-internship-to-hire-rearck-mumbai-all-areas-0-to-5-years-271025000422",
+   "reason": "blocked title (intern)",
+   "skipped_at": "2026-09-27 11:12 PM",
+   "date": "2026-09-27"
+  },
   {
    "title": "Fullstack Engineer",
    "company": "",

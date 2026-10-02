@@ -52,9 +52,10 @@ async def run_forever() -> None:
         while True:  # restart titles from top forever
             for title in JOB_TITLES:
                 await maybe_refresh(page)
-                if await is_blocked(page):
-                    logger.warning("Block/captcha detected — pausing 5 min")
-                    await asyncio.sleep(300)
+                blocked, why = await is_blocked(page)
+                if blocked:
+                    logger.warning(f"Block/captcha detected ({why}) — pausing 5 sec")
+                    await asyncio.sleep(5)
                     continue
                 logger.info(f"=== {title} (24h, Pan-India) ===")
                 try:
@@ -109,17 +110,19 @@ async def run_forever() -> None:
                     elif res in ("already", "external"):
                         log_skipped(j.job_id, j.title, j.company, j.url, res)
                         skipped += 1
+                        await nap(1, 2)  # external/already: skip fast to next job
+                        continue
                     else:
                         log_skipped(j.job_id, j.title, j.company, j.url, "apply failed")
                         skipped += 1
-                    await nap(20, 40)  # human gap, no cap but safe pacing
+                    await nap(5, 9)  # human gap after real attempts, no cap but safe pacing
                     s = stats()
                     logger.info(f"session applied={applied} skipped={skipped} total_db={s}")
                 try:
                     export_dashboard()  # local file always; S3 upload when configured
                 except Exception as e:
                     logger.debug(f"dashboard export: {e}")
-                await nap(3, 6)
+                await nap(1, 2)
     except KeyboardInterrupt:
         logger.info("Stopping — browser stays on disk profile for resume")
     finally:

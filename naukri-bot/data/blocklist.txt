@@ -3,3 +3,4 @@
 # Examples:
 # Infosys
 # Tata Consultancy
+infosys, farmlokal, farm lokal, gentiroads, getinroads, rampup, skillsprout, accenture

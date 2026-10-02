@@ -50,8 +50,15 @@ def load_entries() -> list[str]:
     out = []
     for line in p.read_text(encoding="utf-8").splitlines():
         line = line.strip()
-        if line and not line.startswith("#"):
-            out.append(line)
+        if not line or line.startswith("#"):
+            continue
+        # One per line AND comma/semicolon separated both work:
+        #   Infosys
+        #   infosys, farmlokal, getinroads
+        for part in re.split(r"[,;]", line):
+            part = part.strip()
+            if part and not part.startswith("#"):
+                out.append(part)
     return out
 
 

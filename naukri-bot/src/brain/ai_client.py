@@ -49,6 +49,7 @@ async def ai_answer(question: str, options: list[str] | None = None) -> str:
             resp = await client.chat.completions.create(
                 model=model,
                 max_tokens=30,
+                timeout=20,  # fail fast to next free model instead of hanging
                 messages=[
                     {"role": "system", "content": SYSTEM},
                     {"role": "user", "content": user_prompt(question, options)},

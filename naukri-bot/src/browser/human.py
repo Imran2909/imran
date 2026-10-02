@@ -16,12 +16,12 @@ async def human_type(target, text: str) -> None:
         pass
     if hasattr(target, "press_sequentially"):
         for ch in text:
-            await target.press_sequentially(ch, delay=random.randint(40, 120))
-            if random.random() < 0.03:
-                await asyncio.sleep(random.uniform(0.2, 0.5))
+            await target.press_sequentially(ch, delay=random.randint(25, 70))
+            if random.random() < 0.02:
+                await asyncio.sleep(random.uniform(0.15, 0.35))
     else:
         # ElementHandle has no press_sequentially — type() with delay instead.
-        await target.type(text, delay=random.randint(40, 120))
+        await target.type(text, delay=random.randint(25, 70))
     await nap(0.2, 0.5)
 
 

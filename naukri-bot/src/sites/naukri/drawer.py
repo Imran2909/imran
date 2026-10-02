@@ -122,10 +122,10 @@ async def _chat_box(scope):
 async def _type_chat(page: Page, el, text: str) -> str:
     """Human-like typing into contenteditable. Returns text actually present."""
     await el.click()
-    await nap(0.3, 0.6)
+    await nap(0.2, 0.4)
     await el.evaluate("e => { e.focus(); document.execCommand('selectAll', false, null); }")
     for ch in text:
-        await page.keyboard.type(ch, delay=random.randint(40, 120))
+        await page.keyboard.type(ch, delay=random.randint(25, 70))
     await nap(0.2, 0.5)
     try:
         return ((await el.inner_text()) or "").strip()
@@ -135,7 +135,7 @@ async def _type_chat(page: Page, el, text: str) -> str:
 
 async def _click_save(scope, page: Page) -> bool:
     """Click the Save/Submit div. Waits for it to enable first."""
-    for _ in range(10):  # ~5s for .send.disabled to clear after answering
+    for _ in range(8):  # ~3s for .send.disabled to clear after answering
         try:
             send = await scope.query_selector(".sendMsgbtn_container .send, .sendMsgbtn_container")
             if send:
@@ -144,7 +144,7 @@ async def _click_save(scope, page: Page) -> bool:
                     break
         except Exception:
             pass
-        await nap(0.4, 0.6)
+        await nap(0.3, 0.5)
     for sel in ("div.sendMsg", ".sendMsg"):
         try:
             btn = await scope.query_selector(sel)
@@ -184,7 +184,7 @@ async def _answer_radio(scope, question: str) -> bool:
             )
             await nap(0.5, 1.0)
             return True
-    if not hit and opts:
+    if opts:  # no label matched — fallback to first option so we never stuck
         el0 = opts[0][0]
         await el0.evaluate(
             """e => {
@@ -326,6 +326,43 @@ async def _answer_checkbox(scope, question: str) -> bool:
     return False
 
 
+async def _date_box(scope):
+    """Visible <input type=date> (date-picker), or None."""
+    try:
+        els = await scope.query_selector_all("input[type='date']")
+        for el in els:
+            try:
+                if await el.is_visible():
+                    return el
+            except Exception:
+                pass
+    except Exception:
+        pass
+    return None
+
+
+async def _answer_date(page: Page, scope, question: str) -> bool:
+    """Date pickers need ISO; last working day = today."""
+    from src.brain.rules import today_iso
+
+    del page  # value set via JS; no typing needed
+    box = await _date_box(scope)
+    if not box:
+        return False
+    try:
+        await box.evaluate(
+            "(el, v) => { el.value = v; "
+            "el.dispatchEvent(new Event('input', {bubbles:true})); "
+            "el.dispatchEvent(new Event('change', {bubbles:true})); }",
+            today_iso(),
+        )
+        logger.info(f"Q: {question[:90]} -> A(date): {today_iso()}")
+        return True
+    except Exception as e:
+        logger.debug(f"date fill: {e}")
+        return False
+
+
 async def _answer_file(scope, question: str) -> bool:
     """Resume ONLY when explicitly asked — never blind uploads."""
     if not any(k in question.lower() for k in ("resume", "cv ", "cv", "profile", "upload")):
@@ -382,7 +419,7 @@ async def solve_drawer(page: Page, max_rounds: int = 10) -> bool:
         scope = await _drawer_scope(page)
         question = await read_current_question(scope)
         if not question:
-            await nap(1.2, 2.0)
+            await nap(0.8, 1.2)
             scope = await _drawer_scope(page)
             question = await read_current_question(scope)
             if not question:
@@ -394,6 +431,8 @@ async def solve_drawer(page: Page, max_rounds: int = 10) -> bool:
             answered = await _answer_radio(scope, question)
         elif await _chat_box(scope):
             answered = await _answer_text(page, scope, question)
+        elif await _date_box(scope):
+            answered = await _answer_date(page, scope, question)
         elif await _answer_checkbox(scope, question):
             answered = True
         elif await _answer_file(scope, question):
@@ -413,13 +452,13 @@ async def solve_drawer(page: Page, max_rounds: int = 10) -> bool:
         stuck = 0
         if not answered:
             continue
-        await nap(0.6, 1.2)
+        await nap(0.4, 0.8)
         if not await _click_save(scope, page):
             logger.warning("Save button not clickable")
             continue
         # wait for next question / close / success
-        for _ in range(16):
-            await nap(0.5, 0.7)
+        for _ in range(12):
+            await nap(0.4, 0.6)
             if await _success(page) or await _drawer_gone(page):
                 break
             try:
@@ -428,7 +467,7 @@ async def solve_drawer(page: Page, max_rounds: int = 10) -> bool:
                     break
             except Exception:
                 break
-        await nap(0.8, 1.4)
+        await nap(0.5, 0.9)
     if await _success(page):
         return True
     return await _drawer_gone(page)

@@ -18,11 +18,11 @@ async def search_jobs(page: Page, keyword: str, max_cards: int = 40) -> list[Job
     # jobAge=1 -> last 24h on Naukri; experience=3 targets 2-3 band
     url = f"https://www.naukri.com/{slug}-jobs?k={q}&experience=3&jobAge=1&sort=r"
     await page.goto(url, wait_until="domcontentloaded", timeout=30000)
-    await nap(2, 3)
+    await nap(1, 1.8)
     # scroll to load cards
     for _ in range(3):
         await page.mouse.wheel(0, 900)
-        await nap(0.6, 1.0)
+        await nap(0.4, 0.7)
     cards = await page.query_selector_all("article.jobTuple, div.jobTuple, a.title")
     jobs: list[Job] = []
     seen: set[str] = set()

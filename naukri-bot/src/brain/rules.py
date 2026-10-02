@@ -52,6 +52,33 @@ def _num(s: str) -> float | None:
         return None
 
 
+def _prefer_question_city(q: str, options: list[str]) -> str | None:
+    """If the question names a city present in the options (e.g. relocate to
+    Mumbai with [Mumbai, Pune]), pick THAT city — not a default."""
+    import re as _re
+    stop = {"are", "you", "the", "and", "for", "with", "open", "relocate",
+            "relocation", "willing", "prefer", "preferred", "location",
+            "locations", "city", "cities", "work", "your", "from", "job",
+            "any", "which", "what", "this", "that", "have", "has", "will"}
+    tokens = [w for w in _re.findall(r"[a-z]+", q.lower())
+              if len(w) > 2 and w not in stop]
+    for o in options:
+        ol = o.lower()
+        if any(t in ol for t in tokens):
+            return o
+    return None
+
+
+def today_str() -> str:
+    from datetime import datetime
+    return datetime.now().strftime("%d/%m/%Y")  # Indian format DD/MM/YYYY
+
+
+def today_iso() -> str:
+    from datetime import datetime
+    return datetime.now().strftime("%Y-%m-%d")  # for date-picker fields
+
+
 def pick_experience_option(options: list[str]) -> str:
     """Public: pick the experience band/option containing 3.1 yrs.
 
@@ -112,9 +139,11 @@ def rule_answer(question: str, options: list[str] | None = None) -> str:
             return _pick_positive(options) or options[0]
         return CANDIDATE["notice"]
 
-    # Relocation / location / remote — always Yes
+    # Relocation / location / remote — always Yes (or the asked city)
     if any(k in q for k in ("relocat", "willing to work", "open to")):
-        return _pick_positive(options) if options else CANDIDATE["relocate"]
+        if options:
+            return _prefer_question_city(q, options) or _pick_positive(options) or options[0]
+        return CANDIDATE["relocate"]
     if any(k in q for k in ("remote", "hybrid", "onsite", "on-site", "work mode", "wfh")):
         if options:
             for o in options:
@@ -124,6 +153,9 @@ def rule_answer(question: str, options: list[str] | None = None) -> str:
         return "Yes"
     if "location" in q or "where are you" in q or "current city" in q or "based" in q:
         if options:
+            city = _prefer_question_city(q, options)
+            if city:
+                return city
             for o in options:
                 if "pune" in o.lower():
                     return o
@@ -157,6 +189,12 @@ def rule_answer(question: str, options: list[str] | None = None) -> str:
         return CANDIDATE["linkedin"]
     if "github" in q or "portfolio" in q or "website" in q:
         return CANDIDATE["github"]
+
+    # Last working day / relieving date — actively looking, so today.
+    if any(k in q for k in ("last working day", "last work", "relieving date",
+                            "relieving", "lwd", "leaving date", "end date",
+                            "notice end", "last date of")):
+        return today_str()
     if "gender" in q:
         return "Male"
 

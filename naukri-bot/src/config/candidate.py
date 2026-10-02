@@ -51,5 +51,11 @@ BLOCKED_TITLES = ["wordpress", "angular", "vue", "flutter", "android", "ios",
                   "aiml", "ai/ml", "ai-ml", "ai ml", "machine learning", "ml engineer",
                   "artificial intelligence", "deep learning", "nlp engineer", "data science",
                   "java developer", "java engineer", "java backend", "core java",
-                  "java spring", "spring boot", "j2ee", "java full"]
+                  "java spring", "spring boot", "j2ee", "java full",
+                  # Any Java-titled role (word-boundary keeps JavaScript safe)
+                  "java",
+                  # .NET family and network roles
+                  "net", "dotnet", "asp.net", "asp net", "c#", "vb.net",
+                  "network engineer", "network administrator", "network admin",
+                  "networking"]
 BLOCKED_COMPANIES = ["ti steps", "tele infotech"]

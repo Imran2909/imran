@@ -7,6 +7,13 @@ async def nap(a: float = 0.5, b: float = 1.2) -> None:
     await asyncio.sleep(random.uniform(a, b))
 
 
+async def act_delay() -> None:
+    """Human beat before a REAL action (click/answer/submit): a random
+    2000-5000 milliseconds (2-5 seconds). Fixed robot timing is the
+    classic bot tell — this jitter is what makes clicks look human."""
+    await asyncio.sleep(random.uniform(2.0, 5.0))
+
+
 async def human_type(target, text: str) -> None:
     """Works with both Locator and ElementHandle targets."""
     await target.click()

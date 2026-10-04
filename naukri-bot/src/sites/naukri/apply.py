@@ -12,7 +12,7 @@ import asyncio
 from loguru import logger
 from playwright.async_api import Page
 
-from src.browser.human import nap
+from src.browser.human import act_delay, nap
 from src.sites.naukri.drawer import solve_drawer
 
 EXTERNAL_HINTS = (
@@ -126,6 +126,7 @@ async def apply_to_job(page: Page) -> str:
     except Exception:
         pass
     try:
+        await act_delay()  # human beat, then click Apply
         await insite_btn.click(timeout=5000)
     except Exception as e:
         logger.debug(f"apply click: {e}")

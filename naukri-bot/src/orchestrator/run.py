@@ -115,7 +115,7 @@ async def run_forever() -> None:
                     else:
                         log_skipped(j.job_id, j.title, j.company, j.url, "apply failed")
                         skipped += 1
-                    await nap(5, 9)  # human gap after real attempts, no cap but safe pacing
+                    await nap(3, 6)  # human gap after real attempts, no cap but safe pacing
                     s = stats()
                     logger.info(f"session applied={applied} skipped={skipped} total_db={s}")
                 try:

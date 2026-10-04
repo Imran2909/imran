@@ -1,6 +1,10 @@
-"""CI smoke checks: brain rules, blocklist, candidate profile.
+"""CI safety checks: no network, no browser, no secrets needed.
 
-No network, no browser, no secrets needed. Fails loudly on first problem.
+Asserts the SAFETY CONTRACT (not specific answers — the AI decides those):
+- reasoning dumps are rejected, normal answers pass validation,
+- dead transport -> decline (""), never garbage,
+- prompt carries resume facts + SKIP contract,
+- blocklist + profile data intact.
 Run:  python scripts/ci_check.py   (from naukri-bot/)
 """
 import sys
@@ -9,37 +13,78 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))  # naukri-bot/
 
 
-def check(name, actual, expected):
-    if actual != expected:
-        print(f"FAIL {name}: got {actual!r}, want {expected!r}")
-        return False
-    print(f"ok   {name}")
-    return True
+def check(name, cond, extra=""):
+    print(("ok   " if cond else "FAIL ") + name + (f" [{extra}]" if extra and not cond else ""))
+    return bool(cond)
 
 
-def main() -> int:
-    from src.brain.rules import rule_answer, pick_experience_option
+async def _amain() -> bool:
+    import src.brain.ai_client as AC
+    import src.brain.answer_tool as AT
+    from src.brain.prompts import build_answer_prompt
     from src.config.candidate import CANDIDATE
     from src.tools.blocklist import is_company_blocked
 
-    results = [
-        check("offer-in-hand -> No",
-              rule_answer("Do you have any other offer in hand?", []), "No"),
-        check("holding offer -> No",
-              rule_answer("Are you holding any offers currently?", ["Yes", "No"]), "No"),
-        check("exp band -> 3-4",
-              pick_experience_option(["1-2", "2-3", "3-4", "4-5", "5+"]), "3-4"),
-        check("blocklist typo -> Infosys",
-              is_company_blocked("Infosis Pvt Ltd", ["Infosys"])[0], True),
-        check("blocklist clean -> False",
-              is_company_blocked("TechNeutron Ltd", ["Infosys"])[0], False),
-        check("github link",
-              CANDIDATE["github"], "https://github.com/Imran2909"),
-        check("linkedin link",
-              CANDIDATE["linkedin"], "https://www.linkedin.com/in/imran-sutar-0a858425b"),
-    ]
+    results = []
+
+    # validation rejects thinking dumps, accepts real answers + SKIP
+    results.append(check("reject reasoning dump",
+                         AT.looks_like_reasoning("Here's a thinking process:\n1. **Analyze this")))
+    results.append(check("reject overlong", AT.looks_like_reasoning("x" * 301)))
+    results.append(check("accept short answer", not AT.looks_like_reasoning("3.1")))
+    results.append(check("accept SKIP sentinel", not AT.looks_like_reasoning("SKIP")))
+    results.append(check("strip think tags",
+                         AT.clean_model_text("<think>hmm</think>Yes") == "Yes"))
+    # verdict salvage finds embedded decisions without any model call
+    results.append(check("salvage exact option",
+                         AT._match_option("Yes", ["Yes", "No"]) == "Yes"))
+    results.append(check("salvage from ramble",
+                         AT._match_option("Analysis done... therefore No", ["Yes", "No"]) == "No"))
+    results.append(check("salvage nothing -> None",
+                         AT._match_option("blah blah", ["Yes", "No"]) is None))
+
+    # dead transport -> decline "", never a filed answer
+    async def _dead(*a, **k):
+        raise RuntimeError("no network")
+
+    real_complete = AC.complete
+    AC.complete = _dead
+    try:
+        results.append(check("decline free-text offline",
+                             await AT.prepare_answer("Anything at all?", []) == ""))
+        results.append(check("decline options offline",
+                             await AT.prepare_answer("Pick?", ["Yes", "No"]) == ""))
+    finally:
+        AC.complete = real_complete
+
+    # prompt carries resume facts + contracts
+    _, user = build_answer_prompt("Q?", [])
+    results.append(check("prompt has github", "github.com/Imran2909" in user))
+    results.append(check("prompt has 3.1 policy", "3.1" in user))
+    results.append(check("prompt has SKIP contract", "SKIP" in user))
+
+    # blocklist + profile data
+    results.append(check("blocklist typo -> Infosys",
+                         is_company_blocked("Infosis Pvt Ltd", ["Infosys"])[0] is True))
+    results.append(check("blocklist clean -> False",
+                         is_company_blocked("TechNeutron Ltd", ["Infosys"])[0] is False))
+    results.append(check("github link", CANDIDATE["github"] == "https://github.com/Imran2909"))
+    results.append(check("linkedin link", CANDIDATE["linkedin"] == "https://www.linkedin.com/in/imran-sutar-0a858425b"))
+
+    # scoring offline paths (blocked + clear match; borderline needs network)
+    from src.brain.ai_client import score_job
+    _, _, ok_blocked = await score_job("Java Developer", "java 2-3 years", "SomeCo")
+    _, _, ok_react = await score_job("React Developer", "react node 2-3 years", "SomeCo")
+    results.append(check("java title blocked", ok_blocked is False))
+    results.append(check("react title applies", ok_react is True))
+
     print("CI CHECKS PASS" if all(results) else "CI CHECKS FAILED")
-    return 0 if all(results) else 1
+    return all(results)
+
+
+def main() -> int:
+    import asyncio
+    return 0 if asyncio.run(_amain()) else 1
 
 
 if __name__ == "__main__":

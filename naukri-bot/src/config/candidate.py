@@ -16,12 +16,14 @@ CANDIDATE = {
     "city": "Pune, Maharashtra, India",
     "exp": EXP,
     "exp_label": EXP_LABEL,
-    "current_ctc": "3.6",
-    "current_monthly": "30000",
-    "expected_ctc": "4.2",
-    "expected_monthly": "35000",
-    "notice": "15 days",
+    "current_ctc": "4.8",
+    "current_monthly": "40000",
+    "expected_ctc": "6.0",
+    "expected_monthly": "50000",
+    "notice": "Immediate joiner",
+    "notice_days": "15",
     "notice_short": "15",
+    "dob": "29/09/2000",
     "relocate": "Yes",
     "immediate": "Immediate joiner",
     "linkedin": os.getenv("LINKEDIN_URL", "https://www.linkedin.com/in/imran-sutar-0a858425b"),
@@ -57,5 +59,7 @@ BLOCKED_TITLES = ["wordpress", "angular", "vue", "flutter", "android", "ios",
                   # .NET family and network roles
                   "net", "dotnet", "asp.net", "asp net", "c#", "vb.net",
                   "network engineer", "network administrator", "network admin",
-                  "networking"]
+                  "networking",
+                  # No Go experience either — decline these roles entirely
+                  "golang", "go developer", "go backend"]
 BLOCKED_COMPANIES = ["ti steps", "tele infotech"]

@@ -18,9 +18,8 @@ import random
 from loguru import logger
 from playwright.async_api import Page
 
-from src.brain.ai_client import ai_answer
-from src.brain.rules import rule_answer, strip_to_number
-from src.browser.human import nap
+from src.brain.rules import strip_to_number
+from src.browser.human import act_delay, nap
 from src.config.candidate import CANDIDATE
 from src.config.settings import SETTINGS
 
@@ -69,12 +68,13 @@ async def read_current_question(scope) -> str:
                 pass
         if not texts:
             return ""
-        if len(texts) == 1 and any(h in texts[0].lower() for h in GREETING_HINTS):
-            return ""  # greeting only, question not loaded yet
-        for t in reversed(texts):  # latest non-greeting message
-            if not any(h in t.lower() for h in GREETING_HINTS):
-                return t[:500]
-        return texts[-1][:500]
+        # Greeting-only (question not loaded yet) -> NOT a question.
+        # If EVERY message is a greeting/ack, there is nothing to answer.
+        real = [t for t in texts
+                if not any(h in t.lower() for h in GREETING_HINTS)]
+        if not real:
+            return ""
+        return real[-1][:500]
     except Exception:
         return ""
 
@@ -149,6 +149,7 @@ async def _click_save(scope, page: Page) -> bool:
         try:
             btn = await scope.query_selector(sel)
             if btn and await btn.is_visible():
+                await act_delay()  # human beat, then submit
                 await btn.click()
                 return True
         except Exception:
@@ -166,16 +167,20 @@ async def _click_save(scope, page: Page) -> bool:
 
 
 async def _answer_radio(scope, question: str) -> bool:
+    from src.brain.answer_tool import prepare_answer
+
     opts = await _radio_options(scope)
     if not opts:
         return False
     labels = [lab for _, lab in opts]
-    best = rule_answer(question, labels)
-    if len(best) < 2 and labels:
-        best = await ai_answer(question, labels)
-    logger.info(f"Q: {question[:90]} -> A(radio): {best}")
+    best = (await prepare_answer(question, labels)).strip()
+    logger.info(f"Q: {question[:90]} -> A(radio): {best or '(declined)'}")
+    if not best:
+        return False  # declined / unconfirmed — skip, never blind-click
+    bl = best.lower()
     for el, lab in opts:
-        if best.lower().strip() in lab.lower() or lab.lower() in best.lower().strip():
+        if lab.lower().strip() == bl:
+            await act_delay()  # human beat, then choose
             await el.evaluate(
                 """e => {
                   const l = e.id ? document.querySelector(`label[for="${CSS.escape(e.id)}"]`) : null;
@@ -184,16 +189,7 @@ async def _answer_radio(scope, question: str) -> bool:
             )
             await nap(0.5, 1.0)
             return True
-    if opts:  # no label matched — fallback to first option so we never stuck
-        el0 = opts[0][0]
-        await el0.evaluate(
-            """e => {
-              const l = e.id ? document.querySelector(`label[for="${CSS.escape(e.id)}"]`) : null;
-              (l || e).click();
-            }"""
-        )
-        await nap(0.5, 1.0)
-        return True
+    logger.warning(f"AI verdict not clickable, skipping job: {question[:80]}")
     return False
 
 
@@ -226,7 +222,6 @@ async def _answer_text(page: Page, scope, question: str) -> bool:
 async def _answer_checkbox(scope, question: str) -> bool:
     import re as _re
 
-    from src.brain.rules import pick_experience_option
     from src.config.candidate import SKILLS
 
     try:
@@ -250,12 +245,16 @@ async def _answer_checkbox(scope, question: str) -> bool:
             k in question.lower() for k in ("experience", "exp ", "total year", "years")
         )
         if is_exp_q and looks_like_bands:
-            # "Total Years of experience" [1-2, 2-3, 3-4, 4-5, 5+] -> tick 3-4 only.
-            best = pick_experience_option(labels)
-            logger.info(f"Q: {question[:90]} -> A(checkbox band): {best}")
+            # Bands / skill ticks: AI decides from resume; validated membership.
+            from src.brain.answer_tool import prepare_answer
+
+            best = (await prepare_answer(question, labels)).strip()
+            logger.info(f"Q: {question[:90]} -> A(checkbox band): {best or '(declined)'}")
+            if not best:
+                return False
             for el, lab in boxes:
                 try:
-                    if lab == best and not await el.is_checked():
+                    if lab.lower().strip() == best.lower() and not await el.is_checked():
                         await el.check()
                         return True
                 except Exception:
@@ -284,11 +283,11 @@ async def _answer_checkbox(scope, question: str) -> bool:
         logger.info(f"Q: {question[:90]} -> A(checkbox): resume skills ticked")
         return True
     # Universal fallback: neither skills nor bands matched (e.g. preferred
-    # cities, work modes as ticks). Pick best option via rules and tick it.
+    # cities, work modes as ticks). AI decides; exact/containment tick.
     # Exact match first; containment only for long labels to avoid
     # substring traps ("Male" is inside "Female").
     try:
-        from src.brain.rules import rule_answer as _rule
+        from src.brain.answer_tool import prepare_answer
 
         seen_boxes = []
         for el in await scope.query_selector_all("input[type='checkbox']"):
@@ -304,7 +303,7 @@ async def _answer_checkbox(scope, question: str) -> bool:
                 pass
         if seen_boxes:
             labels = [lab for _, lab in seen_boxes]
-            best = _rule(question or "choose option", labels)
+            best = await prepare_answer(question or "choose option", labels)
             bl = best.lower().strip()
             ticked = False
             for el, lab in seen_boxes:  # pass 1: exact
@@ -407,67 +406,92 @@ async def _count_questions(scope) -> int:
         return 0
 
 
+async def _save_enabled(scope) -> bool:
+    """Is Save already clickable without us typing anything?"""
+    try:
+        send = await scope.query_selector(".sendMsgbtn_container .send, .sendMsgbtn_container")
+        if not send:
+            return False
+        return "disabled" not in ((await send.get_attribute("class")) or "")
+    except Exception:
+        return False
+
+
 async def solve_drawer(page: Page, max_rounds: int = 10) -> bool:
-    """READ current question -> ANSWER visible widget -> SAVE. Repeat per question."""
+    """READ current question -> ANSWER visible widget -> SAVE. Repeat per question.
+
+    Safety contract: Save is clicked ONLY when we typed/selected something
+    this round, or Save was already enabled (pre-answered/optional). A
+    question we cannot answer confidently ends the job as failed — the bot
+    SKIPS it instead of submitting garbage. Any unexpected error also fails
+    safe (never crashes the run, never types half-answers).
+    """
     scope = await _drawer_scope(page)
     stuck = 0  # consecutive rounds with a question but no answerable widget
     for rnd in range(max_rounds):
-        if await _success(page):
-            return True
-        if await _drawer_gone(page):
-            return await _success(page)
-        scope = await _drawer_scope(page)
-        question = await read_current_question(scope)
-        if not question:
-            await nap(0.8, 1.2)
+        try:
+            if await _success(page):
+                return True
+            if await _drawer_gone(page):
+                return await _success(page)
             scope = await _drawer_scope(page)
             question = await read_current_question(scope)
             if not question:
-                return await _success(page) or await _drawer_gone(page)
-        logger.info(f"[round {rnd+1}] Q: {question[:120]}")
-        before = await _count_questions(scope)
-        answered = False
-        if await _radio_options(scope):
-            answered = await _answer_radio(scope, question)
-        elif await _chat_box(scope):
-            answered = await _answer_text(page, scope, question)
-        elif await _date_box(scope):
-            answered = await _answer_date(page, scope, question)
-        elif await _answer_checkbox(scope, question):
-            answered = True
-        elif await _answer_file(scope, question):
-            answered = True
-        else:
-            stuck += 1
-            logger.warning(f"No answer widget visible for: {question[:100]} (stuck {stuck})")
-            if stuck >= 2:
-                # Question may be optional or already answered — try advancing.
-                logger.info("Trying Save to advance past widget-less question")
-                stuck = 0
-                if await _click_save(scope, page):
-                    await nap(1.5, 2.5)
-                    continue
-            await nap(1.5, 2.5)
-            continue
-        stuck = 0
-        if not answered:
-            continue
-        await nap(0.4, 0.8)
-        if not await _click_save(scope, page):
-            logger.warning("Save button not clickable")
-            continue
-        # wait for next question / close / success
-        for _ in range(12):
-            await nap(0.4, 0.6)
-            if await _success(page) or await _drawer_gone(page):
-                break
-            try:
+                await nap(0.8, 1.2)
                 scope = await _drawer_scope(page)
-                if await _count_questions(scope) > before:
+                question = await read_current_question(scope)
+                if not question:
+                    return await _success(page) or await _drawer_gone(page)
+            logger.info(f"[round {rnd+1}] Q: {question[:120]}")
+            before = await _count_questions(scope)
+            answered = False
+            if await _radio_options(scope):
+                answered = await _answer_radio(scope, question)
+            elif await _chat_box(scope):
+                answered = await _answer_text(page, scope, question)
+            elif await _date_box(scope):
+                answered = await _answer_date(page, scope, question)
+            elif await _answer_checkbox(scope, question):
+                answered = True
+            elif await _answer_file(scope, question):
+                answered = True
+            else:
+                stuck += 1
+                logger.warning(f"No answer widget visible for: {question[:100]} (stuck {stuck})")
+                if stuck >= 2 and await _save_enabled(scope):
+                    # Pre-answered/optional: Save needs nothing from us.
+                    logger.info("Save already enabled — advancing past widget-less question")
+                    stuck = 0
+                    if await _click_save(scope, page):
+                        await nap(1.0, 1.6)
+                        continue
+                await nap(1.0, 1.6)
+                continue
+            stuck = 0
+            if not answered:
+                # Widget seen but nothing confidently filled — do NOT Save.
+                # Skipping this job is always safer than submitting blind.
+                logger.warning(f"Could not answer confidently, skipping job: {question[:100]}")
+                return False
+            await nap(0.4, 0.8)
+            if not await _click_save(scope, page):
+                logger.warning("Save button not clickable")
+                continue
+            # wait for next question / close / success
+            for _ in range(12):
+                await nap(0.4, 0.6)
+                if await _success(page) or await _drawer_gone(page):
                     break
-            except Exception:
-                break
-        await nap(0.5, 0.9)
+                try:
+                    scope = await _drawer_scope(page)
+                    if await _count_questions(scope) > before:
+                        break
+                except Exception:
+                    break
+            await nap(0.5, 0.9)
+        except Exception as e:
+            logger.warning(f"Drawer round failed safe ({e}) — skipping job")
+            return False
     if await _success(page):
         return True
     return await _drawer_gone(page)

@@ -16,6 +16,11 @@ def _bool(name: str, default: bool = False) -> bool:
 class Settings:
     naukri_email: str = os.getenv("NAUKRI_EMAIL", "")
     naukri_password: str = os.getenv("NAUKRI_PASSWORD", "")
+    # Generic AI provider (AIML API today, OpenRouter before). AI_API_KEY wins;
+    # OPENROUTER_API_KEY stays as fallback so old setups keep working.
+    ai_api_key: str = os.getenv("AI_API_KEY", "") or os.getenv("OPENROUTER_API_KEY", "")
+    ai_base_url: str = os.getenv("AI_BASE_URL", "https://api.aimlapi.com/v1")
+    ai_model: str = os.getenv("AI_MODEL", "")  # empty = auto-pick from provider
     openrouter_key: str = os.getenv("OPENROUTER_API_KEY", "")
     openrouter_model: str = os.getenv("OPENROUTER_MODEL", "openrouter/free")
     full_name: str = os.getenv("FULL_NAME", "Imran Sutar")

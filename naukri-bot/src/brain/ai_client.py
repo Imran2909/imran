@@ -172,7 +172,7 @@ async def score_job(title: str, description: str, company: str) -> tuple[int, st
     hit = next((b for b in BLOCKED_TITLES if _word_hit(tl, b)), None)
     if hit:
         return 0, f"blocked title ({hit})", False
-    # experience gate: skip 5+ yr roles for 3.1 profile
+    # experience gate: skip 5+ yr roles for 3.2 profile
     import re
     m = re.search(r"(\d+(?:\.\d+)?)\s*(?:-|to)\s*(\d+(?:\.\d+)?)\s*(?:yr|year)", description.lower())
     if m and float(m.group(1)) >= 5:
@@ -184,7 +184,7 @@ async def score_job(title: str, description: str, company: str) -> tuple[int, st
     # borderline -> ask AI (free) briefly. User policy: apply at 50%+ match,
     # so even a weak verdict still applies — only hard blocks skip.
     try:
-        ans = await ai_answer(f"Should a 3.1yr full-stack dev apply for '{title}' at {company}? Reply Yes or No.", ["Yes", "No"])
+        ans = await ai_answer(f"Should a 3.2yr full-stack dev apply for '{title}' at {company}? Reply Yes or No.", ["Yes", "No"])
         if ans.lower() == "yes":
             return 70, "AI: possible match", True
         return 50, "AI: weak match, applying per 50% policy", True

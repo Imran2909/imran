@@ -1,7 +1,7 @@
 # Imran Naukri Bot — Python AI Orchestrator (Naukri first)
 
 Pan-India, past-24h only, in-site Apply only, headed keep-open browser, no apply cap.
-Rule-first brain (3.1 yrs everywhere, positive defaults) + OpenRouter **free** fallback.
+Rule-first brain (3.2 yrs everywhere, positive defaults) + OpenRouter **free** fallback.
 
 ## Setup
 ```
@@ -35,5 +35,11 @@ No numeric cap per your spec, but 20-40s gap between applies to protect profile.
   Source: **GitHub Actions**.
 * Refresh public numbers anytime: `nk-publish` (regenerates data.json, commits, pushes).
 
-## Add LinkedIn later
-Implement `src/sites/linkedin/` with same `Job` dataclass — orchestrator unchanged.
+## LinkedIn (Easy Apply only)
+```
+python -m src.orchestrator.run --site linkedin
+```
+Needs `LINKEDIN_EMAIL` + `LINKEDIN_PASSWORD` in `.env`. Same loop, guards,
+brain, history and dashboard as Naukri — Easy Apply filter + past-24h only,
+external jobs skipped. Session is reused; any verification wall stops the
+run to protect the account.

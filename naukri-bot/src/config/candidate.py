@@ -1,4 +1,4 @@
-"""Candidate profile — 3.1 years everywhere, positive defaults."""
+"""Candidate profile — 3.2 years everywhere, positive defaults."""
 import os
 from pathlib import Path
 
@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 
 load_dotenv(Path(__file__).resolve().parents[2] / ".env")
 
-EXP = "3.1"
-EXP_LABEL = "3.1 years"
+EXP = "3.2"
+EXP_LABEL = "3.2 years"
 
 CANDIDATE = {
     "name": "Imran Sutar",
@@ -30,7 +30,7 @@ CANDIDATE = {
     "github": os.getenv("GITHUB_URL", "https://github.com/Imran2909"),
 }
 
-# Every skill from resume maps to 3.1
+# Every skill from resume maps to 3.2
 SKILLS = [
     "javascript", "typescript", "react", "react.js", "next", "next.js",
     "node", "node.js", "express", "express.js", "html", "css",

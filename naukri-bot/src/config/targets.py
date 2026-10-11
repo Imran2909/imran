@@ -14,5 +14,5 @@ JOB_TITLES = [
     "Senior Web Developer",
 ]
 
-# Naukri experience filter: 2-3 years band covers 3.1 profile
+# Naukri experience filter: 2-3 years band covers 3.2 profile
 EXPERIENCE_LABEL = "2-3 Yrs"

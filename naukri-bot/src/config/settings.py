@@ -16,6 +16,8 @@ def _bool(name: str, default: bool = False) -> bool:
 class Settings:
     naukri_email: str = os.getenv("NAUKRI_EMAIL", "")
     naukri_password: str = os.getenv("NAUKRI_PASSWORD", "")
+    linkedin_email: str = os.getenv("LINKEDIN_EMAIL", "")
+    linkedin_password: str = os.getenv("LINKEDIN_PASSWORD", "")
     # Generic AI provider (AIML API today, OpenRouter before). AI_API_KEY wins;
     # OPENROUTER_API_KEY stays as fallback so old setups keep working.
     ai_api_key: str = os.getenv("AI_API_KEY", "") or os.getenv("OPENROUTER_API_KEY", "")
@@ -26,7 +28,7 @@ class Settings:
     full_name: str = os.getenv("FULL_NAME", "Imran Sutar")
     phone: str = os.getenv("PHONE", "9370093936")
     city: str = os.getenv("CITY", "Pune")
-    years_exp: str = os.getenv("YEARS_EXPERIENCE", "3.1")
+    years_exp: str = os.getenv("YEARS_EXPERIENCE", "3.2")
     headless: bool = _bool("RUN_HEADLESS", False)
     resume_path: str = os.getenv(
         "RESUME_PATH",

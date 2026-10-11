@@ -6,6 +6,7 @@ from playwright.async_api import Page
 
 from src.browser.human import nap
 from src.sites.base import Job
+from src.sites.naukri.company import extract_company
 
 
 def _slug(title: str) -> str:
@@ -43,10 +44,7 @@ async def search_jobs(page: Page, keyword: str, max_cards: int = 40) -> list[Job
             job_id = job_id_m.group(1) if job_id_m else href
             # company / meta from card text
             card_text = (await card.inner_text())[:600]
-            company = ""
-            m = await card.query_selector("a.subTitle, div a.comp-name, span.comp-name")
-            if m:
-                company = (await m.inner_text()).strip()
+            company = await extract_company(card, title)
             posted, appli = "", ""
             pm = re.search(r"(\d+\s*(?:min|mins|hour|hours|day|days?)\s*ago|Just now|Today|Yesterday)", card_text, re.I)
             if pm:

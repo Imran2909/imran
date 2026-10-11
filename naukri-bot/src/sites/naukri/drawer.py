@@ -166,10 +166,72 @@ async def _click_save(scope, page: Page) -> bool:
     return False
 
 
+async def _click_el(el) -> None:
+    """Click an input's <label> when it has one, else the element itself."""
+    await el.evaluate(
+        """e => {
+          const l = e.id ? document.querySelector(`label[for="${CSS.escape(e.id)}"]`) : null;
+          (l || e).click();
+        }"""
+    )
+
+
+async def _role_options(scope, role: str) -> list[tuple[object, str]]:
+    """ARIA role-based options (div-styled radios/checkboxes) as (el, label)."""
+    out = []
+    try:
+        els = await scope.query_selector_all(f"[role='{role}']")
+        for el in els:
+            try:
+                if not await el.is_visible():
+                    continue
+                lab = ((await el.inner_text()) or "").strip().split("\n")[0].strip()[:60]
+                if lab:
+                    out.append((el, lab))
+            except Exception:
+                pass
+    except Exception:
+        pass
+    return out
+
+
+async def _role_checked(el) -> bool:
+    try:
+        return (await el.get_attribute("aria-checked")) == "true"
+    except Exception:
+        return False
+
+
+async def _box_checked(el, is_native: bool) -> bool:
+    if is_native:
+        try:
+            return await el.is_checked()
+        except Exception:
+            return False
+    return await _role_checked(el)
+
+
+async def _box_check(el, is_native: bool) -> bool:
+    """Tick/check. Returns True only if the action executed."""
+    try:
+        if is_native:
+            await el.check()
+        else:
+            await el.click()
+        return True
+    except Exception:
+        return False
+
+
 async def _answer_radio(scope, question: str) -> bool:
     from src.brain.answer_tool import prepare_answer
 
     opts = await _radio_options(scope)
+    native = True
+    if not opts:
+        # No native inputs? Try ARIA role-based options (div-styled).
+        opts = [(el, lab) for el, lab in await _role_options(scope, "radio")]
+        native = False
     if not opts:
         return False
     labels = [lab for _, lab in opts]
@@ -181,13 +243,11 @@ async def _answer_radio(scope, question: str) -> bool:
     for el, lab in opts:
         if lab.lower().strip() == bl:
             await act_delay()  # human beat, then choose
-            await el.evaluate(
-                """e => {
-                  const l = e.id ? document.querySelector(`label[for="${CSS.escape(e.id)}"]`) : null;
-                  (l || e).click();
-                }"""
-            )
+            await _click_el(el)
             await nap(0.5, 1.0)
+            if not native and not await _role_checked(el):
+                logger.warning(f"Role radio click did not take, skipping job: {question[:80]}")
+                return False
             return True
     logger.warning(f"AI verdict not clickable, skipping job: {question[:80]}")
     return False
@@ -224,8 +284,8 @@ async def _answer_checkbox(scope, question: str) -> bool:
 
     from src.config.candidate import SKILLS
 
+    boxes: list[tuple] = []  # (el, label, is_native)
     try:
-        boxes = []
         for el in await scope.query_selector_all("input[type='checkbox']"):
             try:
                 if not await el.is_visible():
@@ -234,12 +294,16 @@ async def _answer_checkbox(scope, question: str) -> bool:
                     "e => ((e.closest('label') || e.parentElement || {}).innerText || '').trim()"
                 )
                 if lab:
-                    boxes.append((el, lab))
+                    boxes.append((el, lab, True))
             except Exception:
                 pass
         if not boxes:
+            # No native inputs? Try ARIA role-based options (div-styled).
+            for el, lab in await _role_options(scope, "checkbox"):
+                boxes.append((el, lab, False))
+        if not boxes:
             return False
-        labels = [lab for _, lab in boxes]
+        labels = [lab for _, lab, _ in boxes]
         looks_like_bands = any(_re.search(r"\d\s*[-–+]", lab) for lab in labels)
         is_exp_q = looks_like_bands or any(
             k in question.lower() for k in ("experience", "exp ", "total year", "years")
@@ -252,11 +316,14 @@ async def _answer_checkbox(scope, question: str) -> bool:
             logger.info(f"Q: {question[:90]} -> A(checkbox band): {best or '(declined)'}")
             if not best:
                 return False
-            for el, lab in boxes:
+            for el, lab, nat in boxes:
                 try:
-                    if lab.lower().strip() == best.lower() and not await el.is_checked():
-                        await el.check()
-                        return True
+                    if lab.lower().strip() == best.lower() and not await _box_checked(el, nat):
+                        await act_delay()  # human beat, then tick
+                        if await _box_check(el, nat):
+                            if not nat and not await _box_checked(el, nat):
+                                continue
+                            return True
                 except Exception:
                     pass
             return False
@@ -264,17 +331,15 @@ async def _answer_checkbox(scope, question: str) -> bool:
         pass
     hit = False
     try:
-        els = await scope.query_selector_all("input[type='checkbox']")
-        for el in els:
+        for el, lab, nat in boxes:
             try:
-                if not await el.is_visible() or await el.is_checked():
+                if not await el.is_visible() or await _box_checked(el, nat):
                     continue
-                lab = await el.evaluate(
-                    "e => ((e.closest('label') || e.parentElement || {}).innerText || '').trim().toLowerCase()"
-                )
-                if any(s in lab for s in SKILLS if len(s) > 2):
-                    await el.check()
-                    hit = True
+                if any(s in lab.strip().lower() for s in SKILLS if len(s) > 2):
+                    if await _box_check(el, nat):
+                        if not nat and not await _box_checked(el, nat):
+                            continue
+                        hit = True
             except Exception:
                 pass
     except Exception:
@@ -289,34 +354,35 @@ async def _answer_checkbox(scope, question: str) -> bool:
     try:
         from src.brain.answer_tool import prepare_answer
 
-        seen_boxes = []
-        for el in await scope.query_selector_all("input[type='checkbox']"):
+        unchecked = []
+        for el, lab, nat in boxes:
             try:
-                if not await el.is_visible() or await el.is_checked():
-                    continue
-                lab = await el.evaluate(
-                    "e => ((e.closest('label') || e.parentElement || {}).innerText || '').trim()"
-                )
-                if lab:
-                    seen_boxes.append((el, lab))
+                if await el.is_visible() and not await _box_checked(el, nat):
+                    unchecked.append((el, lab, nat))
             except Exception:
                 pass
-        if seen_boxes:
-            labels = [lab for _, lab in seen_boxes]
+        if unchecked:
+            labels = [lab for _, lab, _ in unchecked]
             best = await prepare_answer(question or "choose option", labels)
             bl = best.lower().strip()
             ticked = False
-            for el, lab in seen_boxes:  # pass 1: exact
+            for el, lab, nat in unchecked:  # pass 1: exact
                 if lab.lower().strip() == bl:
-                    await el.check()
-                    ticked = True
+                    await act_delay()  # human beat, then tick
+                    if await _box_check(el, nat):
+                        if not nat and not await _box_checked(el, nat):
+                            continue
+                        ticked = True
             if not ticked and len(bl) > 4:  # pass 2: containment
-                for el, lab in seen_boxes:
+                for el, lab, nat in unchecked:
                     ll = lab.lower()
                     if bl in ll or ll in bl:
-                        await el.check()
-                        ticked = True
-                        break
+                        await act_delay()  # human beat, then tick
+                        if await _box_check(el, nat):
+                            if not nat and not await _box_checked(el, nat):
+                                continue
+                            ticked = True
+                            break
             if ticked:
                 logger.info(f"Q: {question[:90]} -> A(checkbox fallback): {best}")
                 return True
@@ -406,6 +472,35 @@ async def _count_questions(scope) -> int:
         return 0
 
 
+async def _debug_widgets(scope) -> None:
+    """Log what interactive elements ARE present when no widget matched.
+
+    INFO level (not debug) so it shows in the terminal next to the Q/A
+    lines — this is how we learn new Naukri widget markup without guessing.
+    """
+    try:
+        items = await scope.evaluate("""el => {
+            const cls = n => (typeof n.className === 'string' ? n.className : '')
+                .split(' ').filter(Boolean).slice(0, 2).join('.');
+            const out = [];
+            el.querySelectorAll('input,select,textarea,button,[role],label,'
+                + '[class*="option"],[class*="choice"],[class*="check"],[class*="ssrc"]').forEach(n => {
+                let vis = false;
+                try { const r = n.getBoundingClientRect(); vis = r.width > 0 && r.height > 0; } catch (e) {}
+                if (!vis) return;
+                out.push(n.tagName.toLowerCase()
+                    + (n.type ? '[' + n.type + ']' : '')
+                    + (n.getAttribute && n.getAttribute('role') ? '{' + n.getAttribute('role') + '}' : '')
+                    + (cls(n) ? '.' + cls(n) : '')
+                    + ':"' + ((n.innerText || n.value || '').trim().slice(0, 40) + '"'));
+            });
+            return out.slice(0, 15);
+        }""")
+        logger.info(f"Drawer widgets present: {items}")
+    except Exception as e:
+        logger.debug(f"widget debug: {e}")
+
+
 async def _save_enabled(scope) -> bool:
     """Is Save already clickable without us typing anything?"""
     try:
@@ -445,7 +540,10 @@ async def solve_drawer(page: Page, max_rounds: int = 10) -> bool:
             logger.info(f"[round {rnd+1}] Q: {question[:120]}")
             before = await _count_questions(scope)
             answered = False
-            if await _radio_options(scope):
+            has_radio = await _radio_options(scope)
+            if not has_radio and await _role_options(scope, "radio"):
+                has_radio = True  # div-styled radios, no native inputs
+            if has_radio:
                 answered = await _answer_radio(scope, question)
             elif await _chat_box(scope):
                 answered = await _answer_text(page, scope, question)
@@ -458,6 +556,7 @@ async def solve_drawer(page: Page, max_rounds: int = 10) -> bool:
             else:
                 stuck += 1
                 logger.warning(f"No answer widget visible for: {question[:100]} (stuck {stuck})")
+                await _debug_widgets(scope)
                 if stuck >= 2 and await _save_enabled(scope):
                     # Pre-answered/optional: Save needs nothing from us.
                     logger.info("Save already enabled — advancing past widget-less question")

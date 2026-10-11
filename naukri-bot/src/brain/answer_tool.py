@@ -104,6 +104,34 @@ def _question_named_option(question: str, options: list[str]) -> str | None:
     return hits[0] if len(hits) == 1 else None
 
 
+_EXP_TRIGGER = _re.compile(r"\b(years?|yrs?|yoe|experience|experiences|exp|how long)\b", _re.I)
+_SALARY_GUARD = _re.compile(r"\b(salary|ctc|pay|compensation|lakh|lpa|package)\b", _re.I)
+
+
+def _experience_answer(question: str, options: list[str]) -> str | None:
+    """Fixed fact: experience in ANY tech stack is always 3.2 years.
+
+    Returns the answer, or None to fall through to the AI. Word boundaries
+    matter: "expertise"/"expected" must NOT trigger (no boundary after
+    "exp"), and salary questions are excluded by the guard.
+    """
+    q = question.lower()
+    if not _EXP_TRIGGER.search(q) or _SALARY_GUARD.search(q):
+        return None
+    if not options:
+        return "3.2"
+    for o in options:  # exact 3.2 first
+        if o.strip().lower() in ("3.2", "3.2 years", "3.2 yrs"):
+            return o.strip()
+    for o in options:  # then band starting with 3 ("3-4" beats "2-3")
+        if o.strip().lower().startswith("3"):
+            return o.strip()
+    for o in options:  # then any standalone 3 ("13" must not match)
+        if _re.search(r"\b3(\.2)?\b", o):
+            return o.strip()
+    return None  # e.g. Yes/No options — leave those to the AI
+
+
 async def _extract_verdict(dirty: str, options: list[str]) -> str:
     """Second pass: have the model re-read its own ramble and output just
     the final answer. Returns "" when extraction also fails."""
@@ -145,6 +173,14 @@ async def prepare_answer(question: str, options: list[str] | None = None) -> str
         if named:
             logger.info(f"Question names its answer: {named}")
             return named
+
+    # Fixed fact (not a judgment): experience in ANY tech stack is always
+    # 3.2 years. Enforced deterministically before any model call — faster
+    # and infallible, same as last-working-day-is-today below.
+    fixed_exp = _experience_answer(question, options)
+    if fixed_exp is not None:
+        logger.info(f"Fixed fact (3.2y exp): {fixed_exp}")
+        return fixed_exp
 
     if not SETTINGS.ai_api_key:
         return emergency_fallback(question, options)  # offline: decline

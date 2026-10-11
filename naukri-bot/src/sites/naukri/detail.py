@@ -3,6 +3,7 @@ from loguru import logger
 from playwright.async_api import Page
 
 from src.browser.human import nap
+from src.sites.naukri.company import extract_company
 
 
 async def fetch_detail(page: Page, url: str) -> dict:
@@ -63,4 +64,5 @@ async def fetch_detail(page: Page, url: str) -> dict:
     except Exception as e:
         logger.debug(f"has_apply scan: {e}")
     return {"description": desc, "posted_ago": posted,
-            "applicants": appli, "has_apply": has_apply}
+            "applicants": appli, "has_apply": has_apply,
+            "company": await extract_company(page)}

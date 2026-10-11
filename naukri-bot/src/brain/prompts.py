@@ -9,7 +9,7 @@ from src.config.candidate import CANDIDATE, SKILLS
 
 RESUME_BLOCK = (
     f"Name: {CANDIDATE['name']}, Full Stack Developer, "
-    f"{CANDIDATE['exp']} years professional experience (use 3.1 for EVERY skill).\n"
+    f"{CANDIDATE['exp']} years professional experience (use 3.2 for EVERY skill).\n"
     f"Stack: React.js, Next.js, JavaScript, TypeScript, Node.js, Express.js, "
     f"Python, FastAPI, Django, PHP, Laravel, REST APIs, Microservices, JWT/OAuth2, "
     f"WebSockets, MySQL, PostgreSQL, MongoDB, Redis, Docker, Nginx, AWS EC2/S3/Lambda, "
@@ -27,7 +27,7 @@ understand what is really being asked, check it against the resume above,
 then answer professionally and precisely. There are no fixed patterns here -
 every question is new, and you handle each one on its own merit.
 Answering policy (follow strictly):
-1. Experience: ALWAYS 3.1 years for every skill/technology. Boxes wanting numbers only get bare "3.1". Experience bands: pick the band containing 3.1 (e.g. 3-4, never 1-2, never 5+).
+1. Experience: ALWAYS 3.2 years for every skill/technology. Boxes wanting numbers only get bare "3.2". Experience bands: pick the band containing 3.2 (e.g. 3-4, never 1-2, never 5+).
 2. Always positive: willing to relocate (any city), immediate joiner, open to remote/hybrid/onsite/travel/shifts. Never answer No to willingness questions.
 3. Honest negatives: NOT an ex-employee anywhere (No, no ID), holds NO other offers (No), needs NO visa sponsorship (No), no disability.
 4. Salary: current 4.8 LPA / 40000 monthly; expected 6.0 LPA / 50000 monthly. Notice: immediate joiner, or select the minimum from the options and if need days then say 15 days.
@@ -54,11 +54,11 @@ def build_answer_prompt(question: str, options: list[str]) -> tuple[str, str]:
         user += f"Options (reply with EXACTLY one): {' | '.join(options)}\n"
     else:
         user += ("No options. Reply with a SHORT direct answer only. "
-                 "If it asks for years/numbers, digits only (e.g. 3.1). "
+                 "If it asks for years/numbers, digits only (e.g. 3.2). "
                  "If it asks for a date, use DD/MM/YYYY.\n")
     user += f"Relevant skills: {', '.join(SKILLS[:24])}\n"
     user += ("Examples of perfect replies:\n"
-             "Q: How many years of experience do you have in Node.js?\nA: 3.1\n"
+             "Q: How many years of experience do you have in Node.js?\nA: 3.2\n"
              "Q: Are you willing to relocate?\nA: Yes")
     return SYSTEM, user
 
@@ -67,6 +67,44 @@ def build_answer_prompt(question: str, options: list[str]) -> tuple[str, str]:
 def user_prompt(question: str, options: list[str]) -> str:
     _, user = build_answer_prompt(question, options)
     return user
+
+
+def build_inspect_prompt(snap: dict, goal: str, context: str) -> tuple[str, str]:
+    """Prompt for the stuck-resolver tool. The model sees STRUCTURE ONLY
+    (element refs, labels, headings, error banners) — never field values,
+    never credentials. For logins it must use purpose email/password and
+    NEVER invent the values themselves."""
+    import json as _json
+
+    system = (
+        "You are a browser-automation analyst. A bot is stuck on a web page. "
+        "Study the page snapshot and decide the single next action that moves "
+        "toward the goal. Reply with NOTHING but this exact JSON, no other text:\n"
+        '{"diagnosis": "one line: what is on the page and why it is stuck", '
+        '"action": {"type": "click|fill|select|wait|snapshot|give_up", '
+        '"target": <element ref number, -1 when not applicable>, '
+        '"value": "text for fill, option label for select, else empty string", '
+        '"purpose": "email|password|null (login fields ONLY, never write values yourself)"}, '
+        '"reason": "one line: why this action"}.\n'
+        "Rules: act ONLY on elements from the list, by ref number. "
+        "For login/credential fields ALWAYS use purpose email/password and "
+        "leave value empty — the caller fills secrets locally. "
+        "NEVER choose logout, delete, report, or account-closing elements. "
+        "If the needed element is absent, choose wait once; if truly nothing "
+        "can be done, choose give_up. If only diagnosing, choose snapshot."
+    )
+    slim = {
+        "url": snap.get("url", ""),
+        "title": snap.get("title", ""),
+        "headings": (snap.get("headings") or [])[:8],
+        "alerts": (snap.get("alerts") or [])[:5],
+        "body": (snap.get("body") or "")[:800],
+        "elements": (snap.get("elements") or [])[:40],
+    }
+    user = (f"Goal: {goal}\n"
+            f"Context: {context or 'first attempt'}\n"
+            f"Page snapshot:\n{_json.dumps(slim, ensure_ascii=False)}")
+    return system, user
 
 
 def build_extract_prompt(dirty: str, options: list[str]) -> tuple[str, str]:
@@ -84,6 +122,6 @@ def build_extract_prompt(dirty: str, options: list[str]) -> tuple[str, str]:
                  "If none of them fits, reply with exactly: SKIP")
     else:
         user += ("Reply with the SHORT final answer only. Years/numbers as digits "
-                 "only (e.g. 3.1). Dates as DD/MM/YYYY. "
+                 "only (e.g. 3.2). Dates as DD/MM/YYYY. "
                  "If it cannot be answered truthfully, reply with exactly: SKIP")
     return system, user

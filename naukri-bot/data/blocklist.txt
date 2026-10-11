@@ -1,6 +1,14 @@
 # Companies to NEVER apply to - one per line. Lines starting with # are ignored.
 # Matching ignores case, Pvt/Ltd-type suffixes, and small spelling mistakes.
-# Examples:
-# Infosys
+# To BLOCK a company: write its name on its own line WITHOUT a # in front.
+# To UNBLOCK: put a # in front of its line. No restart needed.
+farmlokal
+farm lokal
+gentiroads
+getinroads
+rampup
+skillsprout
+accenture
+Infosys
+# Examples (NOT active until you remove the #):
 # Tata Consultancy
-infosys, farmlokal, farm lokal, gentiroads, getinroads, rampup, skillsprout, accenture
